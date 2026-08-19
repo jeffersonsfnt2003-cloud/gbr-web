@@ -1,0 +1,2118 @@
+<!doctype html>
+<html lang="es" data-theme="light" data-sitio="gbr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>Guía 1 · Epidemiología · GBR · 2026</title>
+<link rel="stylesheet" href="sistema.css?v=1787174217">
+</head>
+<body>
+
+<div class="progreso" id="progreso" role="progressbar" aria-label="Progreso de lectura"></div>
+
+<header class="topbar">
+  <a class="btn btn-inicio" href="index.html">← <span class="txt-largo">Inicio</span></a>
+  <button class="btn btn-menu-movil" id="menu-movil" aria-label="Abrir el menú" aria-expanded="false">☰ Menú</button>
+  <button class="btn btn-menu-pc" id="menu-pc" aria-label="Plegar el menú" aria-expanded="true">☰</button>
+  <span class="marca">GBR · 2026<b>Guía 1 · Epidemiología</b></span>
+
+  <div class="buscador">
+    <span class="lupa">⌕</span>
+    <input type="search" id="q" placeholder="Buscar sección, término o pregunta…"
+           autocomplete="off" aria-label="Buscar en la guía">
+    <kbd>/</kbd>
+    <ul class="resultados" id="res"></ul>
+  </div>
+
+  <button class="btn" id="tema" aria-label="Cambiar entre tema claro y oscuro"><span id="tema-icono">☾</span> <span id="tema-txt" class="txt-largo">Oscuro</span></button>
+  <button class="btn btn-pdf" id="pdf">↓ <span class="txt-largo">Descargar en </span>PDF</button>
+</header>
+
+<div class="velo" id="velo"></div>
+
+<div class="shell" id="shell">
+  <aside class="toc" id="toc" aria-label="Índice de la guía">
+    <h2>Contenido</h2>
+    <ul>
+      <li class="lam" data-lam="lamina-1"><a href="#lamina-1" data-jump><span class="k">Marco y enfoque</span><span class="t">Qué mide la epidemiología</span></a><ul>
+        <li><a href="#sec-01" data-jump><span class="num">01</span>El espectro de las enfermedades</a></li>
+        <li><a href="#sec-02" data-jump><span class="num">02</span>Emergentes y reemergentes</a></li>
+        <li><a href="#sec-03" data-jump><span class="num">03</span>Tiempo, lugar y persona</a></li>
+      </ul></li>
+      <li class="lam" data-lam="lamina-2"><a href="#lamina-2" data-jump><span class="k">Causalidad</span><span class="t">Por qué enferma quien enferma</span></a><ul>
+        <li><a href="#sec-04" data-jump><span class="num">04</span>Los dos modelos</a></li>
+        <li><a href="#sec-05" data-jump><span class="num">05</span>Historia natural y niveles de prevención</a></li>
+      </ul></li>
+      <li class="lam" data-lam="lamina-3"><a href="#lamina-3" data-jump><span class="k">Cadena epidemiológica</span><span class="t">Los seis eslabones</span></a><ul>
+        <li><a href="#sec-06" data-jump><span class="num">06</span>Agente: cuatro términos que no son sinónimos</a></li>
+        <li><a href="#sec-07" data-jump><span class="num">07</span>Infección, contaminación, infestación</a></li>
+        <li><a href="#sec-08" data-jump><span class="num">08</span>Reservorio, fuente y portador</a></li>
+        <li><a href="#sec-09" data-jump><span class="num">09</span>Modo de transmisión</a></li>
+        <li><a href="#sec-10" data-jump><span class="num">10</span>Huésped susceptible e inmunidad</a></li>
+      </ul></li>
+      <li class="lam" data-lam="lamina-4"><a href="#lamina-4" data-jump><span class="k">Datos y resumen</span><span class="t">Cómo se ordenan los datos</span></a><ul>
+        <li><a href="#sec-11" data-jump><span class="num">11</span>Los cuatro niveles de medición</a></li>
+        <li><a href="#sec-12" data-jump><span class="num">12</span>Qué gráfico para qué variable</a></li>
+        <li><a href="#sec-13" data-jump><span class="num">13</span>Tendencia central y dispersión</a></li>
+      </ul></li>
+      <li class="lam" data-lam="lamina-5"><a href="#lamina-5" data-jump><span class="k">Frecuencia</span><span class="t">Prevalencia, incidencia y tasas</span></a><ul>
+        <li><a href="#sec-14" data-jump><span class="num">14</span>Prevalencia frente a incidencia</a></li>
+        <li><a href="#sec-15" data-jump><span class="num">15</span>Todos los indicadores, con su denominador</a></li>
+      </ul></li>
+      <li class="lam" data-lam="lamina-6"><a href="#lamina-6" data-jump><span class="k">Asociación e impacto</span><span class="t">Comparar y medir la fuerza</span></a><ul>
+        <li><a href="#sec-16" data-jump><span class="num">16</span>La tabla 2×2 cambia de sentido según el diseño</a></li>
+        <li><a href="#sec-17" data-jump><span class="num">17</span>Chi cuadrado: ¿hay diferencia?</a></li>
+        <li><a href="#sec-18" data-jump><span class="num">18</span>Riesgo relativo y razón de posibilidades</a></li>
+        <li><a href="#sec-19" data-jump><span class="num">19</span>Impacto potencial: la lección central</a></li>
+        <li><a href="#sec-20" data-jump><span class="num">20</span>Estandarización de tasas</a></li>
+      </ul></li>
+      <li class="lam" data-lam="lamina-7"><a href="#lamina-7" data-jump><span class="k">Vigilancia</span><span class="t">Cómo se monta un sistema</span></a><ul>
+        <li><a href="#sec-21" data-jump><span class="num">21</span>Las tres polémicas de terminología</a></li>
+        <li><a href="#sec-22" data-jump><span class="num">22</span>Las cuatro etapas</a></li>
+        <li><a href="#sec-23" data-jump><span class="num">23</span>Definición de caso</a></li>
+        <li><a href="#sec-24" data-jump><span class="num">24</span>Fuentes de datos y tipos de vigilancia</a></li>
+        <li><a href="#sec-25" data-jump><span class="num">25</span>Notificación y subregistro</a></li>
+        <li><a href="#sec-26" data-jump><span class="num">26</span>Eventos bajo vigilancia y el RSI-2005</a></li>
+      </ul></li>
+      <li class="lam" data-lam="lamina-8"><a href="#lamina-8" data-jump><span class="k">Curva y corredor</span><span class="t">Detectar la epidemia y evaluar el sistema</span></a><ul>
+        <li><a href="#sec-27" data-jump><span class="num">27</span>El corredor endémico y sus cuatro zonas</a></li>
+        <li><a href="#sec-28" data-jump><span class="num">28</span>Las tres tendencias temporales</a></li>
+        <li><a href="#sec-29" data-jump><span class="num">29</span>Los siete atributos de calidad</a></li>
+        <li><a href="#sec-30" data-jump><span class="num">30</span>Glosario de los tres módulos</a></li>
+      </ul></li>
+    </ul>
+  </aside>
+
+  <main>
+<article class="plate s1" id="lamina-1">
+  <div class="tab"><span>Marco y enfoque</span></div>
+
+  <p class="eyebrow">MOPECE · Unidad 2 <span class="ref m">M2 · pp. 5-16</span></p>
+
+  <h1>Qué mide la epidemiología</h1>
+
+  <p class="standfirst">Los tres módulos se examinan por <b>conceptos</b>, no por narrativa: lo que
+  se pide es distinguir términos que se parecen. Esta guía está montada así, término por término,
+  y <i>cada dato lleva su módulo y su página impresa</i> para que puedas verificarlo en el PDF.</p>
+
+  <div class="nota">
+    <p><b>Cómo leer las citas</b> — Cada afirmación termina con una etiqueta que indica de dónde
+    sale:</p>
+    <ul>
+      <li><span class="ref m">M2 · p. 23</span> Unidad 2, <i>Salud y enfermedad en la población</i></li>
+      <li><span class="ref m">M3 · p. 67</span> Unidad 3, <i>Medición de las condiciones de salud</i></li>
+      <li><span class="ref m">M4 · p. 33</span> Unidad 4, <i>Vigilancia en salud pública</i></li>
+    </ul>
+    <p>El número es la <b>página impresa</b> del módulo, no la del visor de PDF. En estos tres
+    módulos la página impresa es la hoja del PDF menos uno: si buscas la p. 33, ábrela en la hoja 34.</p>
+  </div>
+
+  <ul class="claves">
+    <li><b>Epidemiología</b>: frecuencia, distribución y <i>determinantes</i> de los eventos de
+    salud en poblaciones humanas, <b>más su aplicación</b> a la prevención y el control.
+    <span class="ref m">M2 · p. 9</span></li>
+    <li>El enfoque es un ciclo de cuatro pasos: <b>observar → cuantificar → comparar → proponer</b>.
+    <span class="ref m">M3 · p. 9</span></li>
+    <li>Tres variables clásicas responden tres preguntas: <b>tiempo</b> ¿cuándo?, <b>lugar</b>
+    ¿dónde?, <b>persona</b> ¿en quiénes? <span class="ref m">M2 · p. 15</span></li>
+    <li>«Epidemia» ya no significa solo transmisible: se aplica a <b>cualquier</b> frecuencia no
+    habitual de un daño a la salud. <span class="ref m">M2 · p. 9</span></li>
+    <li>El enfoque supone que la enfermedad <b>no ocurre por azar</b> y <b>no se distribuye
+    homogéneamente</b>. <span class="ref m">M2 · p. 17</span></li>
+  </ul>
+
+  <h2 id="sec-01"><span class="n">01</span>El espectro de las enfermedades</h2>
+
+  <p>La caracterización epidemiológica permite decidir el tipo de respuesta. El eje transmisible /
+  no transmisible se cruza con el eje agudo / crónico. <span class="ref m">M2 · pp. 9-10</span></p>
+
+  <div class="figura">
+    <svg viewBox="0 0 830 300" role="img" aria-label="Cuadrícula de dos por dos que cruza enfermedades transmisibles y no transmisibles con agudas y crónicas. La casilla de transmisibles agudas y la de no transmisibles crónicas son las habituales; las otras dos son las excepciones.">
+      <text class="rot-mini" x="16" y="18">LA REGLA Y SUS DOS EXCEPCIONES</text>
+      <line class="eje" x1="16" y1="28" x2="814" y2="28"/>
+      <text class="rot" x="300" y="66" text-anchor="middle">AGUDAS</text>
+      <text class="rot" x="570" y="66" text-anchor="middle">CRÓNICAS</text>
+      <text class="rot rot-ec" x="160" y="122" text-anchor="end">Transmisibles</text>
+      <text class="rot-mini" x="160" y="138" text-anchor="end">agente biológico</text>
+      <text class="rot rot-me" x="160" y="216" text-anchor="end">No transmisibles</text>
+      <text class="rot-mini" x="160" y="232" text-anchor="end">agente no biológico</text>
+
+      <rect x="180" y="82" width="240" height="80" rx="7" fill="var(--ecto-tenue)" stroke="var(--ecto)" stroke-width="2"/>
+      <text class="rot" x="300" y="116" text-anchor="middle" fill="var(--ecto-txt)">Lo habitual</text>
+      <text class="rot-mini" x="300" y="136" text-anchor="middle">cólera, sarampión, influenza</text>
+
+      <rect x="450" y="82" width="240" height="80" rx="7" fill="var(--papel)" stroke="var(--linea)" stroke-width="1.4" stroke-dasharray="6 4"/>
+      <text class="rot-mini" x="570" y="112" text-anchor="middle" fill="var(--tinta)">Excepción</text>
+      <text class="rot-mini" x="570" y="130" text-anchor="middle">VPH y cáncer cervical,</text>
+      <text class="rot-mini" x="570" y="146" text-anchor="middle">H. pylori y úlcera péptica</text>
+
+      <rect x="180" y="178" width="240" height="80" rx="7" fill="var(--papel)" stroke="var(--linea)" stroke-width="1.4" stroke-dasharray="6 4"/>
+      <text class="rot-mini" x="300" y="208" text-anchor="middle" fill="var(--tinta)">Excepción</text>
+      <text class="rot-mini" x="300" y="226" text-anchor="middle">intoxicaciones, accidentes,</text>
+      <text class="rot-mini" x="300" y="242" text-anchor="middle">lesiones</text>
+
+      <rect x="450" y="178" width="240" height="80" rx="7" fill="var(--meso-tenue)" stroke="var(--meso)" stroke-width="2"/>
+      <text class="rot" x="570" y="212" text-anchor="middle" fill="var(--meso-txt)">Lo habitual</text>
+      <text class="rot-mini" x="570" y="232" text-anchor="middle">cardiovasculares, neoplasias</text>
+
+      <text class="rot-mini" x="716" y="122">el MOPECE</text>
+      <text class="rot-mini" x="716" y="138">se centra aquí</text>
+      <path d="M710,116 L430,116" fill="none" stroke="var(--grafito)" stroke-width="1.4" stroke-dasharray="4 3"/>
+    </svg>
+    <p class="desliza">Desliza la figura para verla completa →</p>
+    <figcaption><b>Cómo se usa</b> — La pregunta de examen no es la regla, son las <i>excepciones</i>:
+    hay 17 enfermedades «crónicas» con papel infeccioso demostrado o sospechado. Y el matiz que casi
+    siempre acompaña: <b>la infección no lleva invariablemente a la enfermedad</b>, ni en cuello
+    uterino ni en hígado. <span class="ref m">M2 · pp. 10-11 · cuadro 2.1</span></figcaption>
+  </div>
+
+  <h2 id="sec-02"><span class="n">02</span>Emergentes y reemergentes</h2>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>Los dos términos y la distinción fina que se pregunta
+        <span class="ref m">M2 · pp. 11-12</span></caption>
+      <thead><tr><th>Término</th><th>Definición textual</th><th>Cita</th></tr></thead>
+      <tbody>
+        <tr><td><b>Emergente</b></td><td>Transmisible cuya incidencia en humanos <b>se ha incrementado en los últimos 25 años del s. XX</b> o que amenaza incrementarse en el futuro cercano</td><td><span class="ref m">M2 · p. 11</span></td></tr>
+        <tr><td><b>Reemergente</b></td><td>Transmisible <b>previamente conocida</b> que reaparece como problema de salud pública tras una etapa de significativo descenso y aparente control</td><td><span class="ref m">M2 · p. 12</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="dato">
+    <p><b>Emergencia aparente frente a real.</b> Es el matiz más examinable de la sección.</p>
+    <ul>
+      <li><b>Aparente</b>: la incidencia sube porque cambió <i>nuestra capacidad de detectar</i>.
+      Ejemplo del módulo: la <b>leptospirosis</b>, al pasar de microaglutinación a PCR y western-blot.</li>
+      <li><b>Real</b>: la incidencia sube porque cambió la <i>interacción población-ambiente</i>.
+      Ejemplo: la <b>legionelosis</b>.</li>
+    </ul>
+    <p><span class="ref m">M2 · p. 12</span></p>
+  </div>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>Las tres vías de reemergencia, con sus ejemplos
+        <span class="ref m">M2 · p. 12</span></caption>
+      <thead><tr><th>Vía</th><th>Ejemplos del módulo</th></tr></thead>
+      <tbody>
+        <tr><td>Resistencia a antibióticos</td><td>gonorrea, malaria, neumococo</td></tr>
+        <tr><td>Mayor susceptibilidad del huésped inmunodeprimido</td><td>desnutrición, cáncer y SIDA → bacilo tuberculoso, <i>Leishmania</i></td></tr>
+        <tr><td><b>Debilitamiento de las medidas de salud pública</b></td><td>malaria, tos ferina, tuberculosis</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="nota">
+    <p><b>Los siete factores de emergencia</b> (Lederberg, 1997, modificado): factores sociales ·
+    atención de salud · producción de alimentos · conducta humana · cambios ambientales ·
+    infraestructura de salud pública · adaptación y cambio microbianos.
+    <span class="ref m">M2 · p. 14 · cuadro 2.3</span></p>
+  </div>
+
+  <h2 id="sec-03"><span class="n">03</span>Tiempo, lugar y persona</h2>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>Qué aporta cada variable clásica <span class="ref m">M2 · pp. 15-16</span></caption>
+      <thead><tr><th>Variable</th><th>Conceptos propios</th><th>Para qué sirve</th></tr></thead>
+      <tbody>
+        <tr class="ecto"><td><b>Tiempo</b></td>
+          <td><b>Estacionalidad</b>: patrón regular entre estaciones.<br><b>Ciclo</b>: patrón regular en periodos <i>mayores</i> a un año.<br><b>Tendencia secular</b>: comportamiento a lo largo del tiempo.</td>
+          <td>Anticipar la ocurrencia; medir el impacto de una intervención antes y después</td></tr>
+        <tr class="meso"><td><b>Lugar</b></td>
+          <td>Unidad geográfica variable: domicilio, barrio, distrito, hospital, área de trabajo, rural o urbana</td>
+          <td>Conocer extensión y velocidad de diseminación; generar hipótesis de riesgo. <b>John Snow, cólera de Londres 1849</b>: rastreó la bomba de agua y al clausurarla acabó con la epidemia</td></tr>
+        <tr class="endoo"><td><b>Persona</b></td>
+          <td>Edad, género, estado nutricional, hábitos y conductas, condición social</td>
+          <td>Identificar grupos de riesgo. La variación puede deberse a <b>exposición</b>, a <b>susceptibilidad</b>, o a ambas</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="hint-q"><span>Comprueba que distingues los términos antes de seguir.</span><button class="btn btn-todas" type="button">Abrir todas</button></p>
+
+  <details class="q"><summary>¿Cuál es la diferencia entre estacionalidad, ciclo y tendencia secular?</summary>
+    <div class="a"><p>Los tres son patrones temporales, y lo que los separa es la <b>escala</b>:
+    <b>estacionalidad</b> es un patrón regular entre estaciones del año; <b>ciclo</b> es un patrón
+    regular en periodos <i>mayores</i> a un año; <b>tendencia secular</b> es el comportamiento
+    general a lo largo del tiempo, sea regular o no.
+    <span class="ref m">M2 · p. 15</span> · <span class="ref m">M4 · pp. 29-30</span></p></div>
+  </details>
+
+  <details class="q"><summary>Una enfermedad sube su incidencia tras introducirse una prueba diagnóstica nueva. ¿Es emergente?</summary>
+    <div class="a"><p>Es una <b>emergencia aparente</b>, no real. Lo que cambió es la capacidad de
+    detección, no la interacción entre la población y el ambiente. El ejemplo del módulo es la
+    leptospirosis al sustituir la microaglutinación por PCR y western-blot; la contraparte real es
+    la legionelosis. <span class="ref m">M2 · p. 12</span></p></div>
+  </details>
+
+  <details class="q"><summary>¿Por qué la definición de epidemiología no termina en «distribución y determinantes»?</summary>
+    <div class="a"><p>Porque incluye <b>«y la aplicación de este estudio en la prevención y control
+    de los problemas de salud»</b>. Sin esa segunda mitad sería una ciencia descriptiva; con ella es
+    una disciplina de acción. Es la parte de la definición que más se olvida al citarla.
+    <span class="ref m">M2 · p. 9</span></p></div>
+  </details>
+
+  <details class="q"><summary>¿Qué tres cosas permite reconocer el modelo de transición epidemiológica que el módulo corrige?</summary>
+    <div class="a"><p>La propuesta original de <b>Omran</b> asumía una evolución <b>lineal</b>. El
+    módulo señala que la historia reciente demostró tres cosas contrarias: los cambios son
+    <b>reversibles</b>, de naturaleza <b>no lineal</b>, y hay <b>coexistencia</b> de enfermedades no
+    transmisibles y transmisibles. De ahí que descuidar los problemas tradicionales por privilegiar
+    las crónico-degenerativas fuera un error. <span class="ref m">M2 · pp. 7-8</span></p></div>
+  </details>
+<div class="pie-lamina"><button class="btn btn-hecho" data-hecho="lamina-1" aria-pressed="false">✓ Marcar repasada</button><span class="crece"></span><a class="btn" href="#lamina-2" data-jump>Siguiente →</a></div></article>
+
+<article class="plate s2" id="lamina-2">
+  <div class="tab"><span>Causalidad</span></div>
+
+  <p class="eyebrow">MOPECE · Unidad 2 <span class="ref m">M2 · pp. 17-21</span></p>
+
+  <h1>Por qué enferma quien enferma</h1>
+
+  <p class="standfirst">Dos modelos de causalidad conviven, y no compiten: la <b>triada</b> sirve
+  para las transmisibles y de ella sale la cadena de infección; las <b>causas componentes</b> valen
+  para todo tipo de enfermedad. La consecuencia práctica de la segunda es lo que se pregunta.</p>
+
+  <h2 id="sec-04"><span class="n">04</span>Los dos modelos</h2>
+
+  <div class="figura">
+    <svg viewBox="0 0 830 400" role="img" aria-label="A la izquierda, la triada epidemiológica: un triángulo con agente, huésped y ambiente en los vértices y el vector al centro. A la derecha, tres círculos que representan causas suficientes de tuberculosis; cada uno se divide en cinco porciones, y la porción A está presente en los tres, por lo que es la causa necesaria.">
+      <text class="rot-mini" x="16" y="18">TRIADA EPIDEMIOLÓGICA · para transmisibles</text>
+      <text class="rot-mini" x="386" y="18">CAUSAS COMPONENTES · para toda enfermedad</text>
+      <line class="eje" x1="16" y1="28" x2="814" y2="28"/>
+
+      <!-- triada -->
+      <path fill="none" d="M196,100 L306,290 L86,290 Z" stroke="var(--grafito)" stroke-width="1.6" stroke-dasharray="6 4"/>
+      <circle cx="196" cy="100" r="34" fill="var(--ecto-tenue)" stroke="var(--ecto)" stroke-width="2.2"/>
+      <text class="rot-mini" x="196" y="104" text-anchor="middle" fill="var(--ecto-txt)">HUÉSPED</text>
+      <line class="guia" x1="230" y1="88" x2="276" y2="62"/>
+      <text class="rot-mini" x="280" y="58" fill="var(--ecto-txt)">susceptible</text>
+      <circle cx="86" cy="290" r="34" fill="var(--meso-tenue)" stroke="var(--meso)" stroke-width="2.2"/>
+      <text class="rot-mini" x="86" y="294" text-anchor="middle" fill="var(--meso-txt)">AGENTE</text>
+      <text class="rot-mini" x="86" y="344" text-anchor="middle" fill="var(--meso-txt)">biológico o no</text>
+      <circle cx="306" cy="290" r="34" fill="var(--endo-tenue)" stroke="var(--endo)" stroke-width="2.2"/>
+      <text class="rot-mini" x="306" y="294" text-anchor="middle" fill="var(--endo-txt)">AMBIENTE</text>
+      <text class="rot-mini" x="306" y="344" text-anchor="middle" fill="var(--endo-txt)">social · físico</text>
+      <ellipse cx="196" cy="212" rx="44" ry="20" fill="var(--papel)" stroke="var(--grafito)" stroke-width="1.6"/>
+      <text class="rot-mini" x="196" y="216" text-anchor="middle" fill="var(--tinta)">VECTOR</text>
+      <text class="rot-mini" x="196" y="374" text-anchor="middle" fill="var(--tinta)">De aquí sale la cadena de infección.</text>
+
+      <line x1="386" y1="46" x2="386" y2="386" stroke="var(--linea)" stroke-width="1"/>
+
+      <!-- tres causas suficientes -->
+      <g>
+        <circle cx="450" cy="130" r="56" fill="none" stroke="var(--meso)" stroke-width="2"/>
+        <path fill="none" d="M450,130 L450,74 M450,130 L503,148 M450,130 L472,183 M450,130 L419,182 M450,130 L397,146" stroke="var(--meso)" stroke-width="1.2"/>
+        <circle cx="450" cy="97" r="13" fill="var(--meso)"/>
+        <text class="rot-mini" x="450" y="102" text-anchor="middle" fill="var(--papel)">A</text>
+        <text class="rot-mini" x="478" y="140">B</text><text class="rot-mini" x="462" y="166">C</text>
+        <text class="rot-mini" x="428" y="166">D</text><text class="rot-mini" x="418" y="138">E</text>
+        <text class="rot-mini" x="450" y="204" text-anchor="middle" fill="var(--tinta)">SUFICIENTE I</text>
+      </g>
+      <g>
+        <circle cx="600" cy="130" r="56" fill="none" stroke="var(--meso)" stroke-width="2"/>
+        <path fill="none" d="M600,130 L600,74 M600,130 L653,148 M600,130 L622,183 M600,130 L569,182 M600,130 L547,146" stroke="var(--meso)" stroke-width="1.2"/>
+        <circle cx="600" cy="97" r="13" fill="var(--meso)"/>
+        <text class="rot-mini" x="600" y="102" text-anchor="middle" fill="var(--papel)">A</text>
+        <text class="rot-mini" x="628" y="140">B</text><text class="rot-mini" x="612" y="166">G</text>
+        <text class="rot-mini" x="578" y="166">F</text><text class="rot-mini" x="568" y="138">H</text>
+        <text class="rot-mini" x="600" y="204" text-anchor="middle" fill="var(--tinta)">SUFICIENTE II</text>
+      </g>
+      <g>
+        <circle cx="750" cy="130" r="56" fill="none" stroke="var(--meso)" stroke-width="2"/>
+        <path fill="none" d="M750,130 L750,74 M750,130 L803,148 M750,130 L772,183 M750,130 L719,182 M750,130 L697,146" stroke="var(--meso)" stroke-width="1.2"/>
+        <circle cx="750" cy="97" r="13" fill="var(--meso)"/>
+        <text class="rot-mini" x="750" y="102" text-anchor="middle" fill="var(--papel)">A</text>
+        <text class="rot-mini" x="778" y="140">J</text><text class="rot-mini" x="762" y="166">I</text>
+        <text class="rot-mini" x="728" y="166">F</text><text class="rot-mini" x="718" y="138">C</text>
+        <text class="rot-mini" x="750" y="204" text-anchor="middle" fill="var(--tinta)">SUFICIENTE III</text>
+      </g>
+
+      <rect x="386" y="228" width="428" height="70" rx="6" fill="var(--vidrio)" stroke="var(--linea)" stroke-width="1"/>
+      <text class="rot-mini" x="402" y="248" fill="var(--tinta)">A está en los TRES pasteles → es la CAUSA NECESARIA</text>
+      <text class="rot-mini" x="402" y="266">En el ejemplo de tuberculosis del módulo, A es Mycobacterium tuberculosis:</text>
+      <text class="rot-mini" x="402" y="284">tiene que estar, pero no basta. B sería la desnutrición: falta en el tercero.</text>
+
+      <text class="rot-mini" x="386" y="326" fill="var(--tinta)">Quitar UN componente bloquea ese mecanismo…</text>
+      <text class="rot-mini" x="386" y="344">…pero la enfermedad sigue llegando por las otras causas suficientes.</text>
+      <text class="rot" x="386" y="372" fill="var(--meso-txt)">Erradicar exige remover la causa necesaria.</text>
+    </svg>
+    <p class="desliza">Desliza la figura para verla completa →</p>
+    <figcaption><b>El dato que se pregunta</b> — No es qué es una causa suficiente, es la
+    <i>consecuencia preventiva</i>: para prevenir <b>no hace falta</b> identificar todos los
+    componentes, basta remover uno y se bloquea la interacción. Pero eso solo cierra <i>ese</i>
+    mecanismo. La única opción para <b>erradicar</b> es remover la causa necesaria.
+    <span class="ref m">M2 · pp. 17-19 · figs. 2.2, 2.3</span></figcaption>
+  </div>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>Vocabulario del modelo de Rothman <span class="ref m">M2 · p. 18</span></caption>
+      <thead><tr><th>Término</th><th>Qué es</th></tr></thead>
+      <tbody>
+        <tr><td><b>Causa componente</b></td><td>Cada condición o evento posible (A, B, C… J)</td></tr>
+        <tr><td><b>Causa suficiente</b></td><td>Conjunto <b>mínimo</b> de condiciones que actúan en concierto, <b>ninguna superflua</b>. Es un mecanismo causal: la enfermedad se inicia cuando se completa</td></tr>
+        <tr><td><b>Causa necesaria</b></td><td>Componente cuya presencia es imprescindible en <b>todos</b> los mecanismos causales</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="nota">
+    <p><b>Los seis criterios de causalidad de Hill (1965)</b>, tal como los enumera el módulo:
+    <b>temporalidad</b> (toda causa precede a su efecto), <b>fuerza de asociación</b>,
+    <b>consistencia</b> de la observación, <b>especificidad</b> de la causa, <b>gradiente
+    biológico</b> (efecto dosis-respuesta) y <b>plausibilidad biológica</b>. La temporalidad es la
+    única que el módulo eleva a principio propio: el <i>determinismo causal</i>.
+    <span class="ref m">M2 · p. 17</span></p>
+  </div>
+
+  <h2 id="sec-05"><span class="n">05</span>Historia natural y niveles de prevención</h2>
+
+  <p><b>Historia natural de la enfermedad</b>: evolución de una enfermedad en un individuo a través
+  del tiempo, <b>en ausencia de intervención</b>. Empieza con la exposición de un huésped
+  susceptible y acaba en recuperación, discapacidad o muerte.
+  <span class="ref m">M2 · pp. 20-21</span></p>
+
+  <div class="figura">
+    <svg viewBox="0 0 830 420" role="img" aria-label="Eje temporal de la historia natural de la enfermedad. El periodo prepatogénico precede al horizonte clínico; el patogénico se divide en subclínico y clínico. Debajo, los tres niveles de prevención alineados con cada momento: primaria antes de la enfermedad, secundaria en el periodo subclínico y clínico temprano, terciaria en la fase de daño.">
+      <text class="rot-mini" x="16" y="18">EL HORIZONTE CLÍNICO ES LA FRONTERA: ANTES NO SE VE, DESPUÉS SÍ</text>
+      <line class="eje" x1="16" y1="28" x2="814" y2="28"/>
+
+      <line x1="330" y1="52" x2="330" y2="250" stroke="var(--tinta)" stroke-width="2" stroke-dasharray="7 5"/>
+      <text class="rot" x="330" y="46" text-anchor="middle" fill="var(--tinta)">HORIZONTE CLÍNICO</text>
+
+      <rect x="40" y="76" width="290" height="46" rx="6" fill="var(--ecto-tenue)" stroke="var(--ecto)" stroke-width="1.6"/>
+      <text class="rot" x="185" y="98" text-anchor="middle" fill="var(--ecto-txt)">PERIODO PREPATOGÉNICO</text>
+      <text class="rot-mini" x="185" y="115" text-anchor="middle">interacción agente · huésped · ambiente</text>
+
+      <rect x="330" y="76" width="200" height="46" rx="6" fill="var(--meso-tenue)" stroke="var(--meso)" stroke-width="1.6"/>
+      <text class="rot-mini" x="430" y="96" text-anchor="middle" fill="var(--meso-txt)">PATOGÉNICO · subclínico</text>
+      <text class="rot-mini" x="430" y="113" text-anchor="middle">cambios tisulares</text>
+
+      <rect x="530" y="76" width="260" height="46" rx="6" fill="var(--meso-tenue)" stroke="var(--meso)" stroke-width="1.6"/>
+      <text class="rot-mini" x="660" y="96" text-anchor="middle" fill="var(--meso-txt)">PATOGÉNICO · clínico</text>
+      <text class="rot-mini" x="660" y="113" text-anchor="middle">signos y síntomas → daño → desenlace</text>
+
+      <!-- periodos superpuestos -->
+      <line x1="40" y1="152" x2="470" y2="152" stroke="var(--ecto)" stroke-width="5" stroke-linecap="round"/>
+      <text class="rot-mini" x="40" y="144" fill="var(--ecto-txt)">PERIODO DE LATENCIA · infección → se vuelve infeccioso</text>
+      <line x1="40" y1="182" x2="580" y2="182" stroke="var(--endo)" stroke-width="5" stroke-linecap="round"/>
+      <text class="rot-mini" x="40" y="174" fill="var(--endo-txt)">PERIODO DE INCUBACIÓN · infección → primer síntoma</text>
+      <line x1="470" y1="212" x2="790" y2="212" stroke="var(--meso)" stroke-width="5" stroke-linecap="round"/>
+      <text class="rot-mini" x="470" y="204" fill="var(--meso-txt)">PERIODO INFECCIOSO o de transmisibilidad</text>
+
+      <line class="eje" x1="16" y1="262" x2="814" y2="262"/>
+      <text class="rot-mini" x="16" y="282">NIVELES DE PREVENCIÓN DE LEAVELL Y CLARK</text>
+
+      <rect x="40" y="296" width="290" height="72" rx="6" fill="var(--papel)" stroke="var(--ecto)" stroke-width="2"/>
+      <text class="rot" x="185" y="318" text-anchor="middle" fill="var(--ecto-txt)">PRIMARIA</text>
+      <text class="rot-mini" x="185" y="336" text-anchor="middle">fomento de la salud</text>
+      <text class="rot-mini" x="185" y="352" text-anchor="middle">protección específica</text>
+
+      <rect x="330" y="296" width="330" height="72" rx="6" fill="var(--papel)" stroke="var(--meso)" stroke-width="2"/>
+      <text class="rot" x="495" y="318" text-anchor="middle" fill="var(--meso-txt)">SECUNDARIA</text>
+      <text class="rot-mini" x="495" y="336" text-anchor="middle">diagnóstico precoz · tratamiento temprano</text>
+      <text class="rot-mini" x="495" y="352" text-anchor="middle">limitación del daño</text>
+
+      <rect x="660" y="296" width="130" height="72" rx="6" fill="var(--papel)" stroke="var(--endo)" stroke-width="2"/>
+      <text class="rot" x="725" y="318" text-anchor="middle" fill="var(--endo-txt)">TERCIARIA</text>
+      <text class="rot-mini" x="725" y="336" text-anchor="middle">rehabilitación</text>
+
+      <text class="rot-mini" x="16" y="398">Desenlaces posibles: recuperación · incapacidad · inmunidad · ESTADO DE PORTADOR · muerte</text>
+    </svg>
+    <div class="leyenda">
+      <div class="ec"><i></i><span><b>Latencia</b>de la infección a volverse <em>infeccioso</em></span></div>
+      <div class="en"><i></i><span><b>Incubación</b>de la infección al <em>primer síntoma</em></span></div>
+      <div class="me"><i></i><span><b>Transmisibilidad</b>ventana en la que puede transferirse el agente</span></div>
+    </div>
+    <p class="desliza">Desliza la figura para verla completa →</p>
+    <figcaption><b>El par que más se confunde</b> — <b>Latencia</b> e <b>incubación</b> arrancan en
+    el mismo punto, la infección, y terminan en puntos distintos: la latencia cuando la persona se
+    vuelve <i>infecciosa</i>, la incubación cuando aparece el <i>primer síntoma</i>. Cuál acaba
+    antes depende de la enfermedad, y ahí está el porqué de que se pueda transmitir sin síntomas.
+    Y en <b>no transmisibles</b> la latencia significa otra cosa: de enfermedad subclínica a
+    síntomas. <span class="ref m">M2 · pp. 20-21, 32-33 · figs. 2.4, 2.5</span></figcaption>
+  </div>
+
+  <p class="hint-q"><span>Estas cuatro se preguntan casi siempre.</span><button class="btn btn-todas" type="button">Abrir todas</button></p>
+
+  <details class="q"><summary>¿Cuál es la única vía para erradicar una enfermedad, según el modelo de causas componentes?</summary>
+    <div class="a"><p><b>Remover su causa necesaria.</b> Quitar cualquier otro componente basta para
+    bloquear <i>un</i> mecanismo causal —porque impide la interacción con los demás— pero la
+    enfermedad seguirá siendo producida por las otras causas suficientes. Solo el componente que
+    está presente en todos los mecanismos, al desaparecer, cierra todas las vías.
+    <span class="ref m">M2 · p. 19</span></p></div>
+  </details>
+
+  <details class="q"><summary>Diferencia entre periodo de latencia y periodo de incubación</summary>
+    <div class="a"><p>Los dos empiezan en la <b>infección</b>. La <b>latencia</b> termina cuando la
+    persona <b>se vuelve infecciosa</b>; la <b>incubación</b> termina con la <b>aparición del primer
+    signo o síntoma</b>. El inicio del periodo de transmisibilidad marca justamente el final de la
+    latencia. En enfermedades <b>no transmisibles</b> el término cambia de sentido: la latencia es el
+    tiempo entre el desarrollo de enfermedad subclínica y la presentación de síntomas.
+    <span class="ref m">M2 · pp. 21, 32-33</span></p></div>
+  </details>
+
+  <details class="q"><summary>¿En qué periodo actúa cada nivel de prevención?</summary>
+    <div class="a"><p><b>Primaria</b> en el periodo <b>prepatogénico</b>, antes de la enfermedad:
+    fomento de la salud y protección específica. <b>Secundaria</b> en el patogénico: diagnóstico
+    precoz, tratamiento temprano y limitación del daño. <b>Terciaria</b> en la fase de daño
+    establecido: rehabilitación. El <b>horizonte clínico</b> es el momento en que la enfermedad se
+    hace aparente y separa lo que no se ve de lo que sí. <span class="ref m">M2 · p. 20</span></p></div>
+  </details>
+
+  <details class="q"><summary>¿Qué añade la palabra «necesaria» a un agente causal?</summary>
+    <div class="a"><p>Que <b>tiene que estar</b> para que ocurra la enfermedad — pero
+    <b>no que baste</b>. El módulo lo dice de los agentes en general: «son necesarios, pero no
+    siempre suficientes». En el ejemplo de tuberculosis, <i>M. tuberculosis</i> es la causa
+    necesaria y aun así la enfermedad requiere completar una causa suficiente entera de cinco
+    componentes. <span class="ref m">M2 · pp. 18-19, 22</span></p></div>
+  </details>
+<div class="pie-lamina"><button class="btn btn-hecho" data-hecho="lamina-2" aria-pressed="false">✓ Marcar repasada</button><span class="crece"></span><a class="btn" href="#lamina-1" data-jump>← Anterior</a><a class="btn" href="#lamina-3" data-jump>Siguiente →</a></div></article>
+
+<article class="plate s3" id="lamina-3">
+  <div class="tab"><span>Cadena epidemiológica</span></div>
+
+  <p class="eyebrow">MOPECE · Unidad 2 <span class="ref m">M2 · pp. 22-42</span></p>
+
+  <h1>Los seis eslabones</h1>
+
+  <p class="standfirst">La cadena ordena la secuencia continua de interacción entre agente, huésped
+  y medio. Se examina de dos maneras: <i>enumerar los seis eslabones en orden</i> y
+  <i>distinguir los términos que se parecen dentro de cada uno</i>.</p>
+
+  <div class="figura">
+    <svg viewBox="0 0 830 448" role="img" aria-label="Los seis eslabones de la cadena epidemiológica dispuestos en círculo: agente causal específico, reservorio, puerta de salida del agente, modo de transmisión, puerta de entrada en el nuevo huésped y susceptibilidad del huésped. Cada eslabón lleva su medida de intervención.">
+      <text class="rot-mini" x="16" y="18">ROMPER CUALQUIER ESLABÓN DETIENE LA TRANSMISIÓN · POR ESO SE ENUMERAN</text>
+      <line class="eje" x1="16" y1="28" x2="814" y2="28"/>
+      <circle cx="415" cy="224" r="128" fill="none" stroke="var(--linea)" stroke-width="1.6" stroke-dasharray="6 5"/>
+      <g>
+        <circle cx="415" cy="96" r="42" fill="var(--meso-tenue)" stroke="var(--meso)" stroke-width="2.2"/>
+        <text class="rot-mini" x="415" y="100" text-anchor="middle" fill="var(--meso-txt)">1 · AGENTE</text>
+        <line class="guia" x1="459" y1="80" x2="560" y2="56"/>
+        <text class="rot-mini" x="566" y="48" fill="var(--tinta)">causal específico</text>
+        <text class="rot-mini" x="566" y="64">tratamiento, desinfección</text>
+      </g>
+      <g>
+        <circle cx="526" cy="160" r="47" fill="var(--endo-tenue)" stroke="var(--endo)" stroke-width="2.2"/>
+        <text class="rot-mini" x="526" y="164" text-anchor="middle" fill="var(--endo-txt)">2 · RESERVORIO</text>
+        <line class="guia" x1="568" y1="152" x2="672" y2="130"/>
+        <text class="rot-mini" x="678" y="122" fill="var(--tinta)">dónde vive el agente</text>
+        <text class="rot-mini" x="678" y="138">saneamiento</text>
+      </g>
+      <g>
+        <circle cx="526" cy="288" r="42" fill="var(--papel)" stroke="var(--grafito)" stroke-width="2"/>
+        <text class="rot-mini" x="526" y="292" text-anchor="middle" fill="var(--tinta)">3 · SALIDA</text>
+        <line class="guia" x1="568" y1="296" x2="672" y2="318"/>
+        <text class="rot-mini" x="678" y="310" fill="var(--tinta)">puerta de salida</text>
+        <text class="rot-mini" x="678" y="326">aislamiento respiratorio</text>
+      </g>
+      <g>
+        <circle cx="415" cy="352" r="42" fill="var(--papel)" stroke="var(--grafito)" stroke-width="2"/>
+        <text class="rot-mini" x="415" y="356" text-anchor="middle" fill="var(--tinta)">4 · MODO</text>
+        <line class="guia" x1="415" y1="396" x2="415" y2="410"/>
+        <text class="rot-mini" x="415" y="420" text-anchor="middle" fill="var(--tinta)">transmisión directa o indirecta</text>
+        <text class="rot-mini" x="415" y="436" text-anchor="middle">agua segura, vectores, higiene de manos</text>
+      </g>
+      <g>
+        <circle cx="304" cy="288" r="42" fill="var(--papel)" stroke="var(--grafito)" stroke-width="2"/>
+        <text class="rot-mini" x="304" y="292" text-anchor="middle" fill="var(--tinta)">5 · ENTRADA</text>
+        <line class="guia" x1="262" y1="296" x2="158" y2="318"/>
+        <text class="rot-mini" x="152" y="310" text-anchor="end" fill="var(--tinta)">al nuevo huésped</text>
+        <text class="rot-mini" x="152" y="326" text-anchor="end">barreras, mosquiteros</text>
+      </g>
+      <g>
+        <circle cx="304" cy="160" r="42" fill="var(--ecto-tenue)" stroke="var(--ecto)" stroke-width="2.2"/>
+        <text class="rot-mini" x="304" y="164" text-anchor="middle" fill="var(--ecto-txt)">6 · HUÉSPED</text>
+        <line class="guia" x1="262" y1="152" x2="158" y2="130"/>
+        <text class="rot-mini" x="152" y="122" text-anchor="end" fill="var(--tinta)">su susceptibilidad</text>
+        <text class="rot-mini" x="152" y="138" text-anchor="end">vacunación, nutrición</text>
+      </g>
+      <path d="M415,142 A82,82 0 0 1 486,182" fill="none" stroke="var(--grafito)" stroke-width="1.6" marker-end="url(#fl)"/>
+      <path d="M528,206 A82,82 0 0 1 528,242" fill="none" stroke="var(--grafito)" stroke-width="1.6" marker-end="url(#fl)"/>
+      <path d="M486,320 A82,82 0 0 1 448,340" fill="none" stroke="var(--grafito)" stroke-width="1.6" marker-end="url(#fl)"/>
+      <path d="M382,340 A82,82 0 0 1 344,320" fill="none" stroke="var(--grafito)" stroke-width="1.6" marker-end="url(#fl)"/>
+      <path d="M302,242 A82,82 0 0 1 302,206" fill="none" stroke="var(--grafito)" stroke-width="1.6" marker-end="url(#fl)"/>
+      <path d="M344,182 A82,82 0 0 1 382,146" fill="none" stroke="var(--grafito)" stroke-width="1.6" marker-end="url(#fl)"/>
+      <defs><marker id="fl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+        <path d="M0,1 L9,5 L0,9 z" fill="var(--grafito)"/></marker></defs>
+    </svg>
+    <p class="desliza">Desliza la figura para verla completa →</p>
+    <figcaption><b>Cómo se usa</b> — Cada eslabón es un punto de intervención, y esa es la razón de
+    que se enumeren: la pregunta habitual no es «qué es el reservorio», es «qué medida corresponde a
+    qué eslabón». Las <b>puertas de entrada son por regla las mismas que las de salida</b>; el
+    contraejemplo del módulo es la intoxicación estafilocócica alimentaria, que sale por una lesión
+    de la piel y entra por vía digestiva. <span class="ref m">M2 · pp. 22, 35 · fig. 2.6</span></figcaption>
+  </div>
+
+  <h2 id="sec-06"><span class="n">06</span>Agente: cuatro términos que no son sinónimos</h2>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>Definiciones textuales y su medida <span class="ref m">M2 · pp. 25-27</span></caption>
+      <thead><tr><th>Término</th><th>Definición</th><th>Escala del módulo</th></tr></thead>
+      <tbody>
+        <tr><td><b>Infectividad</b></td><td>Capacidad del agente de <b>alojarse y multiplicarse</b> dentro de un huésped. Se mide por la dosis infectante mínima</td><td>máxima: sarampión, varicela · intermedia: paperas, rubéola · baja: lepra</td></tr>
+        <tr><td><b>Patogenicidad</b></td><td>Capacidad de <b>producir enfermedad</b> en personas infectadas</td><td>alta: rabia, SIDA, varicela · rinovirus ≈80 % · paperas y rubéola 40-60 % · poliovirus: <b>&gt;90 % asintomáticos</b></td></tr>
+        <tr><td><b>Virulencia</b></td><td>Capacidad de producir <b>casos graves y fatales</b></td><td>—</td></tr>
+        <tr><td><b>Letalidad</b></td><td>Proporción de <b>casos fatales</b>. Describe la gravedad de una epidemia</td><td>—</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="figura">
+    <svg viewBox="0 0 830 340" role="img" aria-label="Espectro de gravedad de una infección dividido en cuatro tramos: inaparente, aparente moderada, grave y fatal. Debajo, los tres cocientes: patogenicidad sobre el total de infectados, y virulencia y letalidad sobre el total de casos aparentes.">
+      <text class="rot-mini" x="16" y="18">LOS TRES COCIENTES SE DEFINEN SOBRE EL MISMO ESPECTRO · LO QUE CAMBIA ES EL DENOMINADOR</text>
+      <line class="eje" x1="16" y1="28" x2="814" y2="28"/>
+
+      <text class="rot" x="415" y="56" text-anchor="middle" fill="var(--tinta)">INFECCIÓN</text>
+      <rect x="40" y="70" width="180" height="46" rx="5" fill="var(--vidrio)" stroke="var(--grafito)" stroke-width="1.4"/>
+      <text class="rot-mini" x="130" y="92" text-anchor="middle" fill="var(--tinta)">INAPARENTE</text>
+      <text class="rot-mini" x="130" y="108" text-anchor="middle">subclínica · a</text>
+      <rect x="220" y="70" width="570" height="46" rx="5" fill="none" stroke="var(--grafito)" stroke-width="1.4" stroke-dasharray="5 4"/>
+      <text class="rot-mini" x="505" y="64" text-anchor="middle" fill="var(--tinta)">APARENTE</text>
+      <rect x="230" y="76" width="180" height="34" rx="4" fill="var(--endo-tenue)"/>
+      <text class="rot-mini" x="320" y="97" text-anchor="middle" fill="var(--endo-txt)">MODERADA · b</text>
+      <rect x="420" y="76" width="180" height="34" rx="4" fill="var(--aviso-tenue)"/>
+      <text class="rot-mini" x="510" y="97" text-anchor="middle" fill="var(--aviso-txt)">GRAVE · c</text>
+      <rect x="610" y="76" width="170" height="34" rx="4" fill="var(--meso-tenue)"/>
+      <text class="rot-mini" x="695" y="97" text-anchor="middle" fill="var(--meso-txt)">FATAL · d</text>
+
+      <!-- llaves de denominador -->
+      <path d="M40,132 v10 h750 v-10" fill="none" stroke="var(--ecto)" stroke-width="2"/>
+      <text class="rot-mini" x="415" y="160" text-anchor="middle" fill="var(--ecto-txt)">total de INFECTADOS = a + b + c + d</text>
+      <path d="M230,178 v10 h550 v-10" fill="none" stroke="var(--meso)" stroke-width="2"/>
+      <text class="rot-mini" x="505" y="206" text-anchor="middle" fill="var(--meso-txt)">total de casos APARENTES = b + c + d</text>
+
+      <line class="eje" x1="16" y1="226" x2="814" y2="226"/>
+      <rect x="16" y="240" width="256" height="82" rx="6" fill="var(--papel)" stroke="var(--ecto)" stroke-width="2"/>
+      <text class="rot" x="144" y="262" text-anchor="middle" fill="var(--ecto-txt)">PATOGENICIDAD</text>
+      <text class="rot-mini" x="144" y="286" text-anchor="middle" fill="var(--tinta)">casos aparentes (b+c+d)</text>
+      <line x1="52" y1="293" x2="236" y2="293" stroke="var(--tinta)" stroke-width="1.2"/>
+      <text class="rot-mini" x="144" y="310" text-anchor="middle" fill="var(--tinta)">total de infectados</text>
+
+      <rect x="288" y="240" width="256" height="82" rx="6" fill="var(--papel)" stroke="var(--meso)" stroke-width="2"/>
+      <text class="rot" x="416" y="262" text-anchor="middle" fill="var(--meso-txt)">VIRULENCIA</text>
+      <text class="rot-mini" x="416" y="286" text-anchor="middle" fill="var(--tinta)">casos graves y fatales (c+d)</text>
+      <line x1="324" y1="293" x2="508" y2="293" stroke="var(--tinta)" stroke-width="1.2"/>
+      <text class="rot-mini" x="416" y="310" text-anchor="middle" fill="var(--tinta)">total de casos aparentes</text>
+
+      <rect x="560" y="240" width="256" height="82" rx="6" fill="var(--papel)" stroke="var(--meso)" stroke-width="2"/>
+      <text class="rot" x="688" y="262" text-anchor="middle" fill="var(--meso-txt)">LETALIDAD</text>
+      <text class="rot-mini" x="688" y="286" text-anchor="middle" fill="var(--tinta)">casos fatales (d)</text>
+      <line x1="596" y1="293" x2="780" y2="293" stroke="var(--tinta)" stroke-width="1.2"/>
+      <text class="rot-mini" x="688" y="310" text-anchor="middle" fill="var(--tinta)">total de casos aparentes</text>
+    </svg>
+    <p class="desliza">Desliza la figura para verla completa →</p>
+    <figcaption><b>El truco para no confundirlos</b> — Mira el <i>denominador</i>, no el numerador.
+    La <b>patogenicidad</b> arranca de todos los <b>infectados</b>; la <b>virulencia</b> y la
+    <b>letalidad</b> arrancan de los <b>casos aparentes</b>. De ahí que el poliovirus tenga
+    patogenicidad bajísima —más del 90 % de infectados no enferma— y aun así los casos que enferman
+    puedan ser graves. <span class="ref m">M2 · pp. 26-27</span></figcaption>
+  </div>
+
+  <div class="nota">
+    <p><b>Errata de la fuente, señalada.</b> En la <b>p. 27</b> el módulo define la letalidad de dos
+    maneras en la misma página: el esquema la pone sobre «total de casos <b>aparentes</b>» y el texto
+    sobre «total de casos <b>diagnosticados</b> en el mismo periodo». En la Unidad 3 (p. 41) usa
+    «total de casos» de la enfermedad. Reproduzco la discrepancia porque te examinas con este
+    material; si te lo preguntan, el denominador de la letalidad son los <b>casos</b>, no la
+    población. <span class="ref m">M2 · p. 27</span> · <span class="ref m">M3 · p. 41</span></p>
+  </div>
+
+  <h2 id="sec-07"><span class="n">07</span>Infección, contaminación, infestación</h2>
+
+  <div class="glosario">
+    <div><b>Infección</b><span>Entrada y desarrollo o multiplicación de un agente infeccioso <b>en el organismo</b> de una persona o animal. <span class="ref m">M2 · p. 25</span></span></div>
+    <div><b>Contaminación</b><span>Presencia de agentes vivos en <b>superficies del cuerpo</b> o en objetos inanimados y sustancias: prendas, juguetes, agua, leche, alimentos. <b>No es infección.</b> <span class="ref m">M2 · p. 25</span></span></div>
+    <div><b>Infestación</b><span>Desarrollo <b>sobre el cuerpo</b> de agentes patógenos, por ejemplo piojos. <span class="ref m">M2 · p. 25</span></span></div>
+    <div><b>Inaparente</b><span>Infección sin signos ni síntomas manifiestos; solo detectable por laboratorio o pruebas cutáneas. Sinónimos: subclínica, asintomática, oculta. <span class="ref m">M2 · p. 26</span></span></div>
+  </div>
+
+  <h2 id="sec-08"><span class="n">08</span>Reservorio, fuente y portador</h2>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>Tres conceptos que se confunden entre sí <span class="ref m">M2 · pp. 30-31</span></caption>
+      <thead><tr><th>Término</th><th>Definición</th><th>Ejemplos del módulo</th></tr></thead>
+      <tbody>
+        <tr class="endoo"><td><b>Reservorio</b></td><td>Hábitat <b>normal</b> donde vive y se multiplica el agente y <b>del cual depende para sobrevivir</b></td><td><b>Humano</b>: transmisión sexual, lepra, tos ferina, sarampión, fiebre tifoidea.<br><b>Extra-humano</b>: brucelosis, leptospirosis, peste, psitacosis, rabia, tétanos.<br><b>Suelo</b>: esporas de carbunco y tétanos años; bacilo de Koch meses en polvo; histoplasmosis y coccidioidomicosis viven y se multiplican en él</td></tr>
+        <tr class="meso"><td><b>Fuente de infección</b></td><td>Persona, animal, objeto o sustancia <b>desde donde el agente pasa</b> a un huésped</td><td>Debe distinguirse de la fuente de <i>contaminación</i>: un cocinero infectado preparando ensalada, el derrame de una fosa séptica en el agua</td></tr>
+        <tr class="ecto"><td><b>Portador</b></td><td>Individuo infectado que alberga el agente <b>sin síntomas ni signos</b> y es fuente potencial de infección</td><td>Por momento: <b>asintomático</b> o sano · <b>en incubación</b> · <b>convaleciente</b> y postconvaleciente.<br>Por duración: <b>transitorio</b> o <b>crónico</b></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="dato">
+    <p><b>Zoonosis</b>: infección o enfermedad transmisible que <b>en condiciones naturales</b>
+    ocurre entre los animales vertebrados y el hombre. <span class="ref m">M2 · p. 30</span></p>
+  </div>
+
+  <div class="caso" id="caso-1">
+    <p class="rot">Los datos de portador que el módulo cuantifica</p>
+    <p class="enunciado">No son adorno: son las cifras que sostienen decisiones operativas
+    concretas.</p>
+    <ul>
+      <li><b>Tuberculosis</b>: cuando se diagnostica al enfermo, <b>ya ha infectado a unas 5
+      personas</b>. De ahí la importancia de la pesquisa en sintomáticos respiratorios.
+      <span class="ref m">M2 · p. 31</span></li>
+      <li><b>Meningitis meningocócica</b>: índice de portadores hasta <b>25 % o más</b> en periodo
+      epidémico; el meningococo se aísla en LCR desde las <b>72 horas</b>.
+      <span class="ref m">M2 · p. 32</span></li>
+      <li><b>Hepatitis A</b>: infectividad máxima en la <b>segunda mitad</b> de la incubación (≈30
+      días); en niños, <b>diez o más casos subclínicos por cada caso con ictericia</b>.
+      <span class="ref m">M2 · p. 32</span></li>
+      <li><b>Hepatitis B</b>: sangre infectante hasta <b>tres meses</b> antes de la ictericia.
+      <b>SIDA</b>: infectante durante años. <span class="ref m">M2 · p. 32</span></li>
+      <li><b>Rabia canina</b>: virus en saliva hasta <b>casi cinco días</b> antes de las señales.
+      <i>Por eso</i> se observa al animal agresor <b>7 a 10 días</b>: si no desarrolla señales en ese
+      intervalo, no estaba enfermo. <span class="ref m">M2 · p. 32</span></li>
+    </ul>
+  </div>
+
+  <h2 id="sec-09"><span class="n">09</span>Modo de transmisión</h2>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>Directa e indirecta, con todas sus subdivisiones
+        <span class="ref m">M2 · pp. 33-35</span></caption>
+      <thead><tr><th>Vía</th><th>Mecanismo</th><th>Detalle examinable</th></tr></thead>
+      <tbody>
+        <tr><td rowspan="1"><b>Directa</b></td><td>Persona a persona</td><td><b>Gotas de Flügge</b> por aspersión sobre conjuntivas o mucosas al estornudar, toser, escupir, hablar o cantar; contacto, besos, relaciones sexuales. En micosis sistémicas, exposición directa a un saprófito del suelo</td></tr>
+        <tr><td rowspan="4"><b>Indirecta</b></td><td>Vehículos o <b>fómites</b></td><td>Objetos, agua, alimentos, leche, productos biológicos. El agente <b>puede o no</b> haberse multiplicado en el vehículo</td></tr>
+        <tr><td>Vector <b>mecánico</b></td><td>Traslado en patas o trompa, o paso por el tubo digestivo, <b>sin multiplicación ni desarrollo cíclico</b></td></tr>
+        <tr><td>Vector <b>biológico</b></td><td>Exige propagación, desarrollo cíclico o ambos (<b>ciclopropagación</b>). El artrópodo es infectante solo tras un <b>periodo de incubación extrínseco</b>. Transmisión <b>transovárica</b> a generaciones sucesivas y <b>transestadial</b> entre estadios</td></tr>
+        <tr><td>Aire</td><td><b>Núcleos goticulares</b> (residuos de evaporación de gotas de Flügge) y <b>polvo</b>. Las partículas de <b>1 a 5 micras</b> llegan a los alvéolos y allí permanecen; las mayores se precipitan y pueden originar transmisión <i>directa</i></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="nota">
+    <p><b>Cómo entrega el vector biológico su carga</b>, según el módulo: por <b>saliva</b> en la
+    picadura (malaria, dengue, fiebre amarilla), por <b>regurgitación</b> (peste), o depositando el
+    agente sobre la piel <b>con la defecación</b>, que entra por la herida o el rascado (enfermedad
+    de Chagas, tifus exantemático y murino). <span class="ref m">M2 · p. 34</span></p>
+  </div>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>Puertas de salida y sus enfermedades <span class="ref m">M2 · p. 35</span></caption>
+      <thead><tr><th>Puerta</th><th>Enfermedades</th></tr></thead>
+      <tbody>
+        <tr><td><b>Respiratoria</b></td><td>Tuberculosis, influenza, sarampión. <b>La de mayor difusión y la más difícil de controlar</b></td></tr>
+        <tr><td>Genitourinaria</td><td>Sífilis, SIDA, gonorrea, otras ITS, leptospirosis</td></tr>
+        <tr><td>Digestiva</td><td>Tifoidea, hepatitis A y E, cólera, amebiasis</td></tr>
+        <tr><td>Piel</td><td>Contacto con lesiones: varicela, herpes zóster, sífilis. Por picadura, mordedura o aguja: sífilis, Chagas, malaria, leishmaniasis, fiebre amarilla, hepatitis B</td></tr>
+        <tr><td>Placentaria</td><td>La placenta es barrera efectiva <b>salvo</b> para sífilis, rubéola, toxoplasmosis, SIDA y Chagas</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="sec-10"><span class="n">10</span>Huésped susceptible e inmunidad</h2>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>Los cuatro tipos de inmunidad <span class="ref m">M2 · p. 41 · fig. 2.8</span></caption>
+      <thead><tr><th></th><th>Natural</th><th>Artificial</th></tr></thead>
+      <tbody>
+        <tr><td><b>Activa</b><br><span style="font-size:var(--t-xs)">suele durar <b>años</b></span></td><td>Enfermedad, clínica o subclínica</td><td><b>Vacuna</b></td></tr>
+        <tr><td><b>Pasiva</b><br><span style="font-size:var(--t-xs)">de días a <b>varios meses</b></span></td><td><b>Transplacentaria</b></td><td>Sueros, gammaglobulina</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="dato">
+    <p><b>Inmunidad de masa o de rebaño.</b> Si la proporción de inmunes es alta, el agente tiene
+    menor probabilidad de diseminarse. Dato citado: interrumpir la transmisión de <b>difteria</b>
+    exige <b>75 a 85 %</b> de población inmune. Y el remate: los modelos matemáticos demuestran que
+    <b>no hace falta el 100 %</b> para que la diseminación se detenga.
+    <span class="ref m">M2 · p. 42</span></p>
+  </div>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>Susceptibilidad y resistencia <span class="ref m">M2 · pp. 40-41</span></caption>
+      <thead><tr><th>Término</th><th>Definición textual</th></tr></thead>
+      <tbody>
+        <tr><td><b>Susceptible</b></td><td>Persona o animal que <b>no posee resistencia suficiente</b> contra un agente patógeno determinado que le proteja de la enfermedad si llega a estar en contacto con él</td></tr>
+        <tr><td><b>Resistencia</b></td><td>Conjunto de <b>mecanismos corporales</b> que sirven de defensa contra la invasión o multiplicación de agentes, o contra los efectos de sus toxinas</td></tr>
+        <tr><td><b>Inmunidad genética</b></td><td>«Memoria celular» heredada a través de generaciones. Explica el impacto de viruela, sarampión, tuberculosis e influenza en grupos indígenas aislados</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="nota">
+    <p><b>Un aviso que el módulo subraya y suele pasarse por alto</b>: en el grupo étnico, el
+    <b>componente cultural pesa tanto como el genético</b>. Los patrones culturales moldean estilos
+    de vida y percepciones que influyen directamente en la conducta frente al riesgo y, por tanto,
+    en la exposición. <span class="ref m">M2 · p. 39</span></p>
+  </div>
+
+  <p class="hint-q"><span>Seis preguntas sobre los términos que más se cruzan.</span><button class="btn btn-todas" type="button">Abrir todas</button></p>
+
+  <details class="q"><summary>Enumera los seis eslabones de la cadena epidemiológica en orden</summary>
+    <div class="a"><p><b>1</b> agente causal específico · <b>2</b> reservorio · <b>3</b> puerta de
+    salida del agente · <b>4</b> modo de transmisión · <b>5</b> puerta de entrada en el nuevo
+    huésped · <b>6</b> susceptibilidad del huésped. <span class="ref m">M2 · p. 22 · fig. 2.6</span></p></div>
+  </details>
+
+  <details class="q"><summary>Diferencia entre reservorio y fuente de infección</summary>
+    <div class="a"><p>El <b>reservorio</b> es el hábitat <i>normal</i> donde el agente vive y se
+    multiplica y <b>del cual depende para sobrevivir</b>. La <b>fuente de infección</b> es aquello
+    <i>desde donde el agente pasa</i> a un huésped en un episodio concreto: puede ser persona,
+    animal, objeto o sustancia. Un mismo ser puede ser las dos cosas, pero no son el mismo concepto:
+    el reservorio es una categoría ecológica, la fuente es una circunstancia.
+    <span class="ref m">M2 · pp. 30-31</span></p></div>
+  </details>
+
+  <details class="q"><summary>Un agente infeccioso vive en la superficie de un juguete. ¿Infección, contaminación o infestación?</summary>
+    <div class="a"><p><b>Contaminación.</b> La sola presencia de agentes vivos en superficies del
+    cuerpo o en objetos inanimados —juguetes, prendas, agua, leche, alimentos— <b>no constituye
+    infección</b>. La <b>infección</b> exige entrada y multiplicación <i>en el organismo</i>. La
+    <b>infestación</b> es el desarrollo <i>sobre</i> el cuerpo, como los piojos.
+    <span class="ref m">M2 · p. 25</span></p></div>
+  </details>
+
+  <details class="q"><summary>¿Qué distingue un vector mecánico de un vector biológico?</summary>
+    <div class="a"><p>En el <b>mecánico</b> el agente <b>no se multiplica ni se desarrolla</b>: es
+    puro traslado, en las patas, la trompa o a través del tubo digestivo del insecto. En el
+    <b>biológico</b> el agente <b>debe propagarse, desarrollarse cíclicamente o ambos</b>
+    (ciclopropagación) dentro del artrópodo, que solo se vuelve infectante tras un <b>periodo de
+    incubación extrínseco</b>. El biológico admite además transmisión <b>transovárica</b> a
+    generaciones sucesivas y <b>transestadial</b> entre estadios del ciclo.
+    <span class="ref m">M2 · p. 34</span></p></div>
+  </details>
+
+  <details class="q"><summary>¿Por qué se observa 7 a 10 días al perro que mordió?</summary>
+    <div class="a"><p>Porque en la rabia el virus está presente en la saliva hasta <b>casi cinco
+    días antes</b> de que aparezcan señales de la enfermedad. Ese margen determinó el periodo de
+    observación: si el animal <b>no desarrolla señales en 7 a 10 días</b>, se concluye que no estaba
+    enfermo cuando mordió. Es un buen ejemplo de cómo un dato de historia natural se convierte en
+    norma operativa. <span class="ref m">M2 · p. 32</span></p></div>
+  </details>
+
+  <details class="q"><summary>¿Qué tipo de inmunidad confiere la vacuna, y cuál el paso de anticuerpos maternos?</summary>
+    <div class="a"><p>La vacuna confiere inmunidad <b>activa artificial</b>; el paso transplacentario
+    de anticuerpos maternos, <b>pasiva natural</b>. La regla para no equivocarse: <b>activa</b> = el
+    propio organismo <i>produce</i> la respuesta, y dura <b>años</b>; <b>pasiva</b> = los
+    anticuerpos <i>se reciben ya hechos</i>, y dura de días a meses.
+    <span class="ref m">M2 · p. 41</span></p></div>
+  </details>
+<div class="pie-lamina"><button class="btn btn-hecho" data-hecho="lamina-3" aria-pressed="false">✓ Marcar repasada</button><span class="crece"></span><a class="btn" href="#lamina-2" data-jump>← Anterior</a><a class="btn" href="#lamina-4" data-jump>Siguiente →</a></div></article>
+
+<article class="plate s4" id="lamina-4">
+  <div class="tab"><span>Datos y resumen</span></div>
+
+  <p class="eyebrow">MOPECE · Unidad 3 <span class="ref m">M3 · pp. 10-30</span></p>
+
+  <h1>Cómo se ordenan los datos</h1>
+
+  <p class="standfirst">Antes de medir hay que saber <b>qué clase de número</b> se tiene entre manos.
+  Los cuatro niveles de medición son una escala <i>acumulativa</i>: cada uno añade una propiedad al
+  anterior, y el discriminador final es el cero.</p>
+
+  <h2 id="sec-11"><span class="n">11</span>Los cuatro niveles de medición</h2>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>Cada nivel añade una propiedad <span class="ref m">M3 · pp. 10-11</span></caption>
+      <thead><tr><th>Nivel</th><th>Qué añade</th><th>Ejemplos del módulo</th></tr></thead>
+      <tbody>
+        <tr><td><b>Nominal</b></td><td>Categorías con nombre, <b>sin orden</b></td><td>Sexo, estado civil, grupo sanguíneo ABO. Cambiar el orden no afecta al análisis</td></tr>
+        <tr><td><b>Ordinal</b></td><td>+ <b>orden</b>, con distancias <b>desiguales</b></td><td>Calidad de un curso (muy malo → excelente), estadios de cáncer I-IV, cultivo −/+/++/+++</td></tr>
+        <tr><td><b>De intervalo</b></td><td>+ <b>intervalos iguales</b>, <b>cero arbitrario</b></td><td>Temperatura corporal, coeficiente intelectual</td></tr>
+        <tr><td><b>Proporcional o de razón</b></td><td>+ <b>cero significativo</b></td><td>Peso, altura. Aquí sí se puede sumar, restar, multiplicar y dividir</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="dato">
+    <p><b>El discriminador es el cero.</b> Existe la misma diferencia entre 37 °C y 39 °C que entre
+    38 °C y 40 °C, pero <b>60 °C no es «tres veces más caliente»</b> que 20 °C, ni alguien con
+    coeficiente 120 es el doble de inteligente que otro con 60. En cambio <b>80 kg sí es el doble</b>
+    de 40 kg. <span class="ref m">M3 · p. 11</span></p>
+  </div>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>Variables cualitativas y cuantitativas <span class="ref m">M3 · p. 10</span></caption>
+      <thead><tr><th>Tipo</th><th>Definición</th><th>Ejemplos</th></tr></thead>
+      <tbody>
+        <tr><td><b>Cualitativa</b></td><td>Atributos o propiedades</td><td>Sexo, etnia, estado civil</td></tr>
+        <tr><td><b>Cuantitativa discreta</b></td><td>Solo <b>números enteros</b>, conjunto finito</td><td>Número de hijos, dientes con caries, camas de hospital, hematíes por campo, pulso</td></tr>
+        <tr><td><b>Cuantitativa continua</b></td><td>Tantos valores como permita la <b>precisión del instrumento</b></td><td>Peso al nacer: 2.500 g, o 2.496,75 g si la báscula lo permite</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="sec-12"><span class="n">12</span>Qué gráfico para qué variable</h2>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>Correspondencia declarada por el módulo <span class="ref m">M3 · p. 19</span></caption>
+      <thead><tr><th>Variable</th><th>Gráficos apropiados</th></tr></thead>
+      <tbody>
+        <tr><td>Nominal</td><td>Barras · sectores</td></tr>
+        <tr><td>Ordinal</td><td>Barras <i>manteniendo el orden</i> · sectores</td></tr>
+        <tr><td>De intervalo</td><td>Barras · <b>histograma</b> · sectores (si discreta o categorizada) · <b>polígonos de frecuencias</b></td></tr>
+        <tr><td>Proporcional o de razón</td><td>Igual que la de intervalo</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>Los cuatro gráficos de distribución <span class="ref m">M3 · pp. 15-17</span></caption>
+      <thead><tr><th>Gráfico</th><th>Rasgo distintivo</th><th>Para qué sirve</th></tr></thead>
+      <tbody>
+        <tr><td>Diagrama de barras</td><td>Barras <b>separadas</b></td><td>Cualitativas y cuantitativas discretas</td></tr>
+        <tr><td><b>Histograma</b></td><td>Barras <b>adyacentes</b>, precisamente para mostrar la continuidad</td><td>Cuantitativas continuas</td></tr>
+        <tr><td>Polígono de frecuencias</td><td>Une los <b>puntos medios</b> del extremo superior de cada barra</td><td>Ver forma y simetría; superponer dos o más distribuciones</td></tr>
+        <tr><td><b>Ojiva porcentual</b></td><td>Polígono de frecuencias <b>relativas acumuladas</b>, de 0 a 100 %</td><td>Leer la <b>mediana</b> gráficamente al 50 %</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="nota">
+    <p><b>Regla de proporción de escalas.</b> El módulo no deja la composición al gusto: recomienda
+    que la razón entre la escala horizontal y la vertical se aproxime a <b>1,6 : 1</b>, la clásica
+    razón de oro, y da como rango aceptable <b>1,2 a 2,2</b>. Una escala vertical exagerada infla
+    diferencias; una horizontal exagerada las aplana. <span class="ref m">M3 · p. 18 · gráf. 3.5</span></p>
+  </div>
+
+  <h2 id="sec-13"><span class="n">13</span>Tendencia central y dispersión</h2>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>Las tres medidas de tendencia central <span class="ref m">M3 · pp. 20-25</span></caption>
+      <thead><tr><th>Medida</th><th>Qué es</th><th>Cuándo usarla</th></tr></thead>
+      <tbody>
+        <tr><td><b>Moda</b></td><td>El valor que <b>más se repite</b></td><td>Cuando interesa lo más frecuente</td></tr>
+        <tr><td><b>Mediana</b></td><td>Valor que ocupa la <b>posición central</b>: 50 % arriba, 50 % abajo. Con número par de datos, promedio de los dos centrales</td><td><b>Distribuciones asimétricas</b> o con valores extremos, como una curva epidémica</td></tr>
+        <tr><td><b>Media</b> o promedio</td><td>Suma de todos los valores entre el número de observaciones</td><td>Mejores propiedades para el <b>análisis estadístico</b> y pruebas de significancia</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="caso" id="caso-2">
+    <p class="rot">El ejemplo del módulo: incubación de rubéola en 11 niños</p>
+    <p class="enunciado">Serie observada: 19, 16, 37, 15, 16, 32, 15, 16, 20, 16, 15 días. Ordenada:
+    15 · 15 · 15 · 16 · 16 · 16 · 16 · 19 · 20 · 32 · 37.</p>
+    <ul>
+      <li><b>Moda = 16 días</b> — se repite cuatro veces.</li>
+      <li><b>Mediana = 16 días</b> — el sexto valor de once.</li>
+      <li><b>Media = 19,7 días</b> — mayor que las otras dos, <i>porque la arrastran</i> los valores
+      extremos de 32 y 37.</li>
+      <li><b>Rango = 22 días</b> (37 − 15) · <b>Desviación estándar = 7,6 días</b>.</li>
+    </ul>
+    <p><b>Por qué importa:</b> es la demostración de que en una distribución asimétrica la media
+    <i>miente</i> sobre el caso típico. Los tres valores describen la misma serie y dan tres
+    respuestas distintas. <span class="ref m">M3 · pp. 21-22, 27</span></p>
+  </div>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>Las medidas de dispersión <span class="ref m">M3 · pp. 25-28</span></caption>
+      <thead><tr><th>Medida</th><th>Definición</th></tr></thead>
+      <tbody>
+        <tr><td><b>Rango</b> o amplitud</td><td>Diferencia entre el valor <b>máximo</b> y el <b>mínimo</b></td></tr>
+        <tr><td><b>Varianza</b> (s²)</td><td>Desviación promedio de los valores respecto a la media: suma de los cuadrados de las diferencias, dividida entre el número de valores <b>menos 1</b></td></tr>
+        <tr><td><b>Desviación estándar</b></td><td><b>Raíz cuadrada de la varianza</b></td></tr>
+        <tr><td><b>Cuantiles</b></td><td>Valores que ocupan una posición según en cuántas partes iguales se divide la serie: <b>percentiles</b> (100), <b>deciles</b> (10), <b>quintiles</b> (5), <b>cuartiles</b> (4)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="dato">
+    <p><b>La regla 68 · 95 · 99,9.</b> Si la variable se distribuye normalmente, el <b>68 %</b> de sus
+    valores cae dentro de ±1 desviación estándar de la media, el <b>95 %</b> dentro de ±2 y el
+    <b>99,9 %</b> dentro de ±3. Con el matiz que el propio módulo añade entre paréntesis: son
+    aproximaciones — el área que abarca el 95 % no son exactamente 2 desviaciones, sino <b>1,96</b>.
+    <span class="ref m">M3 · p. 26 · gráf. 3.7</span></p>
+  </div>
+
+  <div class="nota">
+    <p><b>Los cuatro rasgos de la distribución normal</b>, tal como los enumera el módulo:
+    <b>1</b> tiene un eje de simetría; <b>2</b> media, mediana y moda <b>coinciden</b> en el valor por
+    el que pasa ese eje; <b>3</b> la distancia entre el eje y los <b>puntos de inflexión</b> equivale
+    a la desviación estándar; <b>4</b> es <b>asintótica</b> al eje de abscisas, nunca lo cruza.
+    <span class="ref m">M3 · p. 29</span></p>
+    <p>Y el par de conceptos que de ahí se desprende: la <b>media</b> es indicador de
+    <b>precisión</b>; la <b>desviación estándar</b>, de <b>variación</b>. Son la base de la
+    inferencia estadística. <span class="ref m">M3 · pp. 29-30 · gráf. 3.8</span></p>
+  </div>
+
+  <p class="hint-q"><span>Cuatro preguntas de discriminación.</span><button class="btn btn-todas" type="button">Abrir todas</button></p>
+
+  <details class="q"><summary>¿Qué nivel de medición permite decir que un valor es «el doble» de otro, y por qué?</summary>
+    <div class="a"><p>Solo el <b>proporcional o de razón</b>, porque es el único con <b>cero
+    significativo</b>. En una variable de intervalo el cero es arbitrario, así que las razones no
+    tienen sentido: 60 °C no es el triple de 20 °C. En una proporcional sí: 80 kg es el doble de
+    40 kg. <span class="ref m">M3 · p. 11</span></p></div>
+  </details>
+
+  <details class="q"><summary>¿Cuándo representa mejor la mediana que la media?</summary>
+    <div class="a"><p>Cuando la distribución es <b>asimétrica</b> o hay <b>valores extremos</b>, porque
+    la media los incorpora y se desplaza. El módulo cita como asimétricas la <b>mortalidad</b> y la
+    <b>tasa de ataque en una epidemia</b>. En el ejemplo de la rubéola, moda y mediana son 16 días y
+    la media 19,7, arrastrada por dos casos de 32 y 37. Aun así la media tiene <b>mejores propiedades
+    para el análisis estadístico</b>, y ahí sigue siendo la elegida.
+    <span class="ref m">M3 · pp. 20-22</span></p></div>
+  </details>
+
+  <details class="q"><summary>¿Qué diferencia un histograma de un diagrama de barras?</summary>
+    <div class="a"><p>Que en el <b>histograma las barras van adyacentes</b>, sin separación,
+    precisamente para ilustrar la <b>continuidad</b> de la variable representada. El diagrama de
+    barras, con barras separadas, es para variables <b>cualitativas o cuantitativas discretas</b>.
+    <span class="ref m">M3 · p. 15</span></p></div>
+  </details>
+
+  <details class="q"><summary>El percentil 25 de una distribución de edades es 33 años. ¿Qué significa?</summary>
+    <div class="a"><p>Que el <b>25 % de los casos tenía 33 años o menos</b> — y en consecuencia el
+    <b>75 % era mayor</b> de 33 años. Es el ejemplo textual del módulo. Recuerda además que la
+    <b>mediana es el percentil 50</b>, equivalente al segundo cuartil.
+    <span class="ref m">M3 · p. 28</span></p></div>
+  </details>
+<div class="pie-lamina"><button class="btn btn-hecho" data-hecho="lamina-4" aria-pressed="false">✓ Marcar repasada</button><span class="crece"></span><a class="btn" href="#lamina-3" data-jump>← Anterior</a><a class="btn" href="#lamina-5" data-jump>Siguiente →</a></div></article>
+
+<article class="plate s1" id="lamina-5">
+  <div class="tab"><span>Frecuencia</span></div>
+
+  <p class="eyebrow">MOPECE · Unidad 3 <span class="ref m">M3 · pp. 31-42</span></p>
+
+  <h1>Prevalencia, incidencia y tasas</h1>
+
+  <p class="standfirst">Aquí está el bloque con más términos que se confunden de los tres módulos.
+  La clave para no perderse: <b>prevalencia mide magnitud, incidencia mide velocidad</b>, y cada
+  indicador se distingue de su vecino por el <i>denominador</i>.</p>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>Los tres conceptos de partida <span class="ref m">M3 · pp. 31-32</span></caption>
+      <thead><tr><th>Término</th><th>Definición</th><th>Recorrido</th></tr></thead>
+      <tbody>
+        <tr><td><b>Probabilidad</b></td><td>Número de eventos que ocurren dentro de un número de eventos posibles</td><td>de <b>0 a 1</b>, siendo 1 la certeza absoluta</td></tr>
+        <tr><td><b>Riesgo a la salud</b></td><td>Probabilidad de experimentar un efecto adverso o daño en un tiempo determinado</td><td>de 0 a 1, se expresa multiplicado por una constante</td></tr>
+        <tr><td><b>Tasa</b></td><td>Medida de la <b>rapidez de cambio</b> de un estado a otro por unidad de población y de <b>tiempo-persona</b></td><td>de <b>0 a infinito</b></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="dato">
+    <p><b>Los tres componentes de una tasa</b>, que es lo que la separa de una proporción:
+    <b>numerador</b> — quienes experimentan el evento; <b>denominador</b> — población expuesta o en
+    riesgo; y un <b>periodo de tiempo específico</b> durante el cual se observa. La tasa combina en
+    una sola expresión <b>persona, lugar y tiempo</b>. <span class="ref m">M3 · pp. 31-32</span></p>
+  </div>
+
+  <h2 id="sec-14"><span class="n">14</span>Prevalencia frente a incidencia</h2>
+
+  <div class="figura">
+    <svg viewBox="0 0 830 360" role="img" aria-label="Un depósito representa la prevalencia. Por arriba entra un caudal de casos nuevos, que es la incidencia. Por abajo salen dos desagües: fallecidos y recuperados. El nivel del depósito sube si entra más de lo que sale.">
+      <text class="rot-mini" x="16" y="18">LA PREVALENCIA ES UN NIVEL · LA INCIDENCIA ES UN CAUDAL</text>
+      <line class="eje" x1="16" y1="28" x2="814" y2="28"/>
+
+      <!-- caudal de entrada -->
+      <path fill="none" d="M300,58 v56" stroke="var(--meso)" stroke-width="18" stroke-linecap="round"/>
+      <path d="M300,86 v34" fill="none" stroke="var(--papel)" stroke-width="3" marker-end="url(#f2)"/>
+      <text class="rot" x="284" y="76" text-anchor="end" fill="var(--meso-txt)">INCIDENCIA</text>
+      <text class="rot-mini" x="284" y="94" text-anchor="end">casos NUEVOS</text>
+      <text class="rot-mini" x="284" y="110" text-anchor="end">mide VELOCIDAD</text>
+
+      <!-- depósito -->
+      <path d="M186,120 v150 h228 v-150" fill="none" stroke="var(--grafito)" stroke-width="2.4"/>
+      <rect x="188" y="176" width="224" height="93" fill="var(--ecto-tenue)"/>
+      <line x1="188" y1="176" x2="412" y2="176" stroke="var(--ecto)" stroke-width="2.4"/>
+      <text class="rot" x="300" y="212" text-anchor="middle" fill="var(--ecto-txt)">PREVALENCIA</text>
+      <text class="rot-mini" x="300" y="232" text-anchor="middle">casos EXISTENTES</text>
+      <text class="rot-mini" x="300" y="248" text-anchor="middle">nuevos y antiguos juntos</text>
+      <text class="rot-mini" x="300" y="264" text-anchor="middle">mide MAGNITUD</text>
+
+      <!-- desagües -->
+      <path fill="none" d="M198,270 l-46,54" stroke="var(--grafito)" stroke-width="12" stroke-linecap="round"/>
+      <text class="rot-mini" x="146" y="342" text-anchor="middle" fill="var(--tinta)">FALLECIDOS</text>
+      <path fill="none" d="M402,270 l46,54" stroke="var(--grafito)" stroke-width="12" stroke-linecap="round"/>
+      <text class="rot-mini" x="454" y="342" text-anchor="middle" fill="var(--tinta)">RECUPERADOS</text>
+
+      <!-- consecuencias -->
+      <rect x="500" y="70" width="314" height="252" rx="6" fill="var(--vidrio)" stroke="var(--linea)" stroke-width="1"/>
+      <text class="rot-mini" x="518" y="94" fill="var(--tinta)">EN EQUILIBRIO:  P  =  I  ×  D</text>
+      <text class="rot-mini" x="518" y="112">prevalencia = incidencia × duración</text>
+      <line x1="518" y1="126" x2="796" y2="126" stroke="var(--linea)" stroke-width="1"/>
+      <text class="rot-mini" x="518" y="148" fill="var(--tinta)">Sube la prevalencia si…</text>
+      <text class="rot-mini" x="518" y="166">· sube la incidencia y no cambian salidas</text>
+      <text class="rot-mini" x="518" y="182">· una prueba nueva detecta antes</text>
+      <text class="rot-mini" x="518" y="198">· un fármaco posterga la muerte sin curar</text>
+      <text class="rot-mini" x="518" y="226" fill="var(--tinta)">Baja la prevalencia si…</text>
+      <text class="rot-mini" x="518" y="244">· sube la mortalidad</text>
+      <text class="rot-mini" x="518" y="260">· más gente se recupera</text>
+      <text class="rot-mini" x="518" y="292" fill="var(--meso-txt)">Contraintuitivo: curar y matar bajan</text>
+      <text class="rot-mini" x="518" y="308" fill="var(--meso-txt)">la prevalencia por igual.</text>
+      <defs><marker id="f2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+        <path d="M0,1 L9,5 L0,9 z" fill="var(--papel)"/></marker></defs>
+    </svg>
+    <p class="desliza">Desliza la figura para verla completa →</p>
+    <figcaption><b>El dato que se pregunta</b> — Que <b>mejorar el diagnóstico o el tratamiento
+    <i>sube</i> la prevalencia</b>. Una prueba que detecta en fase subclínica aumenta la incidencia,
+    la duración y por tanto la prevalencia; un fármaco que posterga la muerte sin curar también la
+    sube. Una prevalencia alta no es necesariamente mala noticia, y de ahí que no sirva para evaluar
+    un programa. <span class="ref m">M3 · pp. 37-38 · fig. 3.1</span></figcaption>
+  </div>
+
+  <div class="nota">
+    <p><b>«Tasa de prevalencia» es un término que el módulo pide evitar.</b> La prevalencia no es una
+    tasa: no toma en cuenta el inicio ni la duración de la enfermedad, y su denominador <b>no es
+    necesariamente la población en riesgo</b>. El nombre correcto es <b>proporción de
+    prevalencia</b>. <span class="ref m">M3 · pp. 32, 35</span></p>
+  </div>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>Las tres capas de incidencia <span class="ref m">M3 · pp. 36-37</span></caption>
+      <thead><tr><th>Medida</th><th>Denominador</th><th>Cuándo se usa</th></tr></thead>
+      <tbody>
+        <tr><td><b>Incidencia acumulada</b></td><td>Población en riesgo <b>al comienzo</b> del periodo</td><td>Lo habitual en los servicios. <b>Asume</b> que todos estuvieron en riesgo todo el periodo, lo cual es falso: al enfermar, la persona sale del denominador y pasa al numerador</td></tr>
+        <tr><td><b>Tasa de incidencia</b><br><span style="font-size:var(--t-xs)">o densidad de incidencia, o fuerza de morbilidad</span></td><td><b>Tiempo-persona</b> (años-persona, días-persona)</td><td>La verdadera tasa. En la práctica restringida a la <b>investigación</b>, porque exige seguir a cada individuo</td></tr>
+        <tr><td>Aproximación de campo</td><td>Población <b>a mitad de periodo</b></td><td>Cuando no se dispone de años-persona</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="sec-15"><span class="n">15</span>Todos los indicadores, con su denominador</h2>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>Cuadro de referencia: el denominador es lo que los distingue
+        <span class="ref m">M3 · pp. 35-42</span></caption>
+      <thead><tr><th>Indicador</th><th>Numerador</th><th>Denominador</th><th>Factor</th></tr></thead>
+      <tbody>
+        <tr class="ecto"><td><b>Proporción de prevalencia</b></td><td>Personas con la enfermedad en un periodo</td><td>Total de personas en el mismo periodo</td><td>según convenga</td></tr>
+        <tr class="meso"><td><b>Incidencia acumulada</b></td><td>Casos <b>nuevos</b> en el periodo</td><td>Personas <b>en riesgo</b> al comienzo</td><td>según convenga</td></tr>
+        <tr class="meso"><td><b>Tasa de ataque</b></td><td>Enfermos</td><td><b>Expuestos</b></td><td>× 100</td></tr>
+        <tr class="meso"><td><b>Tasa de ataque secundario</b></td><td>Casos <b>secundarios</b></td><td><b>Contactos susceptibles expuestos</b></td><td>× 100</td></tr>
+        <tr class="endoo"><td>Mortalidad general</td><td>Defunciones</td><td>Población total</td><td>× 1.000</td></tr>
+        <tr class="endoo"><td>«Tasa» de mortalidad <b>infantil</b></td><td>Defunciones en menores de 1 año</td><td><b>Nacidos vivos</b></td><td>× 1.000</td></tr>
+        <tr class="endoo"><td>«Tasa» de mortalidad <b>materna</b></td><td>Muertes maternas</td><td><b>Nacidos vivos</b></td><td>× 100.000</td></tr>
+        <tr class="endoo"><td><b>Letalidad</b></td><td>Defunciones por la enfermedad A</td><td><b>Casos</b> de la enfermedad A</td><td>× 100</td></tr>
+        <tr><td>Mortalidad proporcional</td><td>Muertes por causa específica</td><td>Total de muertes</td><td>× 100</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="nota">
+    <p><b>Por qué el módulo escribe «tasa» entre comillas</b> en mortalidad infantil y materna:
+    porque el denominador son <b>nacidos vivos</b>, que no es tiempo-persona, así que en sentido
+    estricto no son tasas. Se usa por convención porque es el dato <b>factible de obtener</b> — la
+    alternativa exigiría contar todos los menores de un año que deben existir en esa población, o
+    todas las mujeres que estuvieron embarazadas y dieron a luz.
+    <span class="ref m">M3 · pp. 40-41</span></p>
+  </div>
+
+  <div class="caso" id="caso-3">
+    <p class="rot">Mortalidad y letalidad, con el ejemplo del módulo</p>
+    <p class="enunciado">En un distrito de <b>30.000 habitantes</b> ocurrieron <b>200 casos</b> de
+    tifoidea con <b>6 defunciones</b> en un año.</p>
+    <ul>
+      <li><b>Mortalidad</b> = 6 ÷ 30.000 × 10.000 = <b>2 por 10.000 habitantes</b></li>
+      <li><b>Letalidad</b> = 6 ÷ 200 × 100 = <b>3 %</b></li>
+    </ul>
+    <p><b>La distinción</b>: la mortalidad se refiere a las defunciones entre la población
+    <b>total</b>, sana o enferma; la letalidad, solo entre la población <b>enferma</b>.
+    <span class="ref m">M3 · p. 41</span></p>
+    <p><b>Errata de la fuente</b>: la p. 41 imprime el cálculo de la mortalidad como
+    «6 / <b>300.000</b> × 10.000», pero el enunciado dice 30.000 habitantes y el propio texto declara
+    el resultado 2 por 10.000, que solo sale con 30.000. El denominador impreso lleva un cero de
+    más. <span class="ref m">M3 · p. 41</span></p>
+  </div>
+
+  <div class="dato">
+    <p><b>La distribución proporcional NO mide riesgo.</b> Es el aviso explícito del módulo. En el
+    brote de tifus exantemático se enfermaron 38 personas, 24 hombres y 14 mujeres, y <b>se desconoce
+    el total de hombres y mujeres</b> en la población. Con eso puedes decir «de cada 10 enfermos, al
+    menos 6 fueron varones» o «1,7 casos en varones por cada caso en mujeres», pero <b>no puedes
+    afirmar que los varones tuvieran mayor riesgo</b> de enfermar. Sin denominador no hay riesgo.
+    <span class="ref m">M3 · pp. 41-42</span></p>
+  </div>
+
+  <p class="hint-q"><span>Seis preguntas. Las tres primeras salen casi siempre.</span><button class="btn btn-todas" type="button">Abrir todas</button></p>
+
+  <details class="q"><summary>Diferencia entre prevalencia e incidencia</summary>
+    <div class="a"><p>La <b>prevalencia</b> mide el número <b>total</b> de casos existentes en un
+    punto o periodo, sin distinguir si son nuevos: es un indicador de <b>magnitud</b> o carga de
+    enfermedad. La <b>incidencia</b> mide los casos <b>nuevos</b> surgidos de una población en riesgo
+    durante un periodo: es un indicador de <b>velocidad</b> de ocurrencia y un estimador del
+    <b>riesgo absoluto</b>. En equilibrio se relacionan como <b>P = I × D</b>, donde D es la duración.
+    <span class="ref m">M3 · pp. 35-38</span></p></div>
+  </details>
+
+  <details class="q"><summary>¿Por qué es incorrecto decir «tasa de prevalencia»?</summary>
+    <div class="a"><p>Porque la prevalencia <b>no es una medida dinámica</b>: no toma en cuenta el
+    inicio ni la duración de la enfermedad, y su denominador no corresponde necesariamente a la
+    población en riesgo. Una tasa exige tiempo-persona. El término correcto es <b>proporción de
+    prevalencia</b>. <span class="ref m">M3 · p. 32</span></p></div>
+  </details>
+
+  <details class="q"><summary>Se introduce una prueba que detecta la enfermedad en fase subclínica. ¿Qué pasa con la prevalencia?</summary>
+    <div class="a"><p><b>Aumenta.</b> El resultado práctico es un aumento en la incidencia, en la
+    duración aparente de la enfermedad y por tanto en la prevalencia. Lo mismo ocurre si se
+    introduce un medicamento que <b>posterga la mortalidad prematura pero no cura</b>: también sube
+    la prevalencia. Es la razón de que la prevalencia no sirva por sí sola para evaluar un programa.
+    <span class="ref m">M3 · p. 38</span></p></div>
+  </details>
+
+  <details class="q"><summary>Diferencia entre mortalidad y letalidad</summary>
+    <div class="a"><p>El <b>denominador</b>. La <b>mortalidad</b> divide las defunciones entre la
+    <b>población total</b>, sana o enferma. La <b>letalidad</b> las divide entre los <b>casos</b> de
+    la enfermedad. En el ejemplo del módulo, 6 muertes por tifoidea en un distrito de 30.000
+    habitantes con 200 casos dan mortalidad de <b>2 por 10.000</b> y letalidad de <b>3 %</b>.
+    <span class="ref m">M3 · p. 41</span></p></div>
+  </details>
+
+  <details class="q"><summary>¿Qué mide la tasa de ataque secundario y para qué sirve?</summary>
+    <div class="a"><p>Mide la <b>contagiosidad</b> de una enfermedad de transmisión persona a persona.
+    Es el número de casos que aparecen <b>dentro del periodo de incubación</b> entre los contactos
+    susceptibles expuestos a un caso primario o índice, sobre el total de esos contactos, × 100.
+    Sirve para <b>evaluar la efectividad de las medidas de control</b> de un brote.
+    <span class="ref m">M3 · p. 40</span></p></div>
+  </details>
+
+  <details class="q"><summary>La letalidad por tifoidea es 5 % y hubo 40 defunciones. ¿Cuántos casos?</summary>
+    <div class="a"><p><b>800 casos.</b> Si letalidad = defunciones ÷ casos, entonces
+    casos = defunciones ÷ letalidad = 40 ÷ 0,05 = <b>800</b>. Es la pregunta 2 del Ejercicio 3.3 del
+    módulo, y funciona invirtiendo la fórmula. <span class="ref m">M3 · p. 45</span></p></div>
+  </details>
+<div class="pie-lamina"><button class="btn btn-hecho" data-hecho="lamina-5" aria-pressed="false">✓ Marcar repasada</button><span class="crece"></span><a class="btn" href="#lamina-4" data-jump>← Anterior</a><a class="btn" href="#lamina-6" data-jump>Siguiente →</a></div></article>
+
+<article class="plate s2" id="lamina-6">
+  <div class="tab"><span>Asociación e impacto</span></div>
+
+  <p class="eyebrow">MOPECE · Unidad 3 <span class="ref m">M3 · pp. 58-90</span></p>
+
+  <h1>Comparar y medir la fuerza</h1>
+
+  <p class="standfirst">Dos preguntas distintas y dos herramientas distintas: <b>¿hay
+  asociación?</b> lo responde una prueba de significancia; <b>¿cuán fuerte es?</b> lo responden el
+  riesgo relativo y la razón de posibilidades. Y una tercera, la que decide políticas:
+  <b>¿cuánto cambiaría si eliminamos la exposición?</b></p>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>Vocabulario de partida <span class="ref m">M3 · pp. 58-59, 65</span></caption>
+      <thead><tr><th>Término</th><th>Definición textual</th></tr></thead>
+      <tbody>
+        <tr><td><b>Asociación</b></td><td>Relación de <b>dependencia estadística</b> entre dos o más eventos o variables. Está presente si la probabilidad de ocurrencia de uno depende de la ocurrencia de otro</td></tr>
+        <tr><td><b>Factor de riesgo</b></td><td>Característica o circunstancia detectable asociada con una <b>probabilidad incrementada</b> de experimentar un daño. Debe ser <b>identificable, cuantificable y, en lo posible, modificable</b> antes de que ocurra el hecho que predice</td></tr>
+        <tr><td><b>Riesgo absoluto</b></td><td>Incidencia de enfermedad en la población o grupo</td></tr>
+        <tr><td>Hipótesis <b>nula</b> (H₀)</td><td>De <b>no-diferencia</b></td></tr>
+        <tr><td>Hipótesis <b>alterna</b> (H<sub>A</sub>)</td><td>De investigación</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="nota">
+    <p><b>Dos avisos que el módulo repite y son de examen.</b> Primero: <b>una asociación estadística
+    no implica relación causal</b> — puede ser fortuita o «espuria». Segundo: <b>el hallazgo de un
+    factor de riesgo no implica que sea un factor causal</b>; los factores de riesgo son
+    <i>indicadores o marcadores</i> del riesgo. <span class="ref m">M3 · p. 59</span></p>
+  </div>
+
+  <h2 id="sec-16"><span class="n">16</span>La tabla 2×2 cambia de sentido según el diseño</h2>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>Cohortes frente a caso-control <span class="ref m">M3 · pp. 66, 72</span></caption>
+      <thead><tr><th></th><th>Estudio de <b>cohortes</b></th><th>Estudio de <b>caso-control</b></th></tr></thead>
+      <tbody>
+        <tr><td>Se parte de</td><td>Dos grupos <b>sanos</b>: expuesto y no expuesto</td><td>Dos grupos: <b>enfermos</b> (casos) y <b>controles</b></td></tr>
+        <tr><td>Se observa</td><td>Quién <b>desarrolla</b> la enfermedad, durante un seguimiento</td><td>Quién <b>había estado expuesto</b> previamente</td></tr>
+        <tr><td>Permite calcular</td><td><b>Incidencia</b> en ambos grupos → <b>riesgo relativo</b></td><td>No permite incidencia → <b>razón de posibilidades</b></td></tr>
+        <tr><td>Celda <b>a</b></td><td>Expuestos que enfermaron</td><td>Casos que estuvieron expuestos</td></tr>
+        <tr><td>Celda <b>b</b></td><td>Expuestos que no enfermaron</td><td><b>Controles</b> que estuvieron expuestos</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="sec-17"><span class="n">17</span>Chi cuadrado: ¿hay diferencia?</h2>
+
+  <div class="dato">
+    <p><b>Fórmula abreviada para tablas 2×2</b>, la que el módulo recomienda en la práctica:</p>
+    <p style="font-family:var(--mono);font-size:var(--t-md);text-align:center;margin:10px 0">
+      x² = n · (ad − bc)² ÷ [(a+b)(c+d)(a+c)(b+d)]</p>
+    <p>El valor <b>esperado</b> de cada celda se obtiene multiplicando sus <b>totales marginales</b>
+    y dividiendo por el gran total. Si el x² observado <b>supera</b> el valor crítico, la diferencia
+    <b>no</b> se debe al azar. <span class="ref m">M3 · pp. 61-62</span></p>
+  </div>
+
+  <div class="caso" id="caso-4">
+    <p class="rot">El mejor ejemplo del módulo: dos tasas que parecen distintas y no lo son</p>
+    <p class="enunciado">Localidad rural de 760 habitantes en zona malárica. Incidencia acumulada en
+    campesinos <b>88,2 por mil</b>; en no campesinos <b>55,8 por mil</b>. Parece una diferencia
+    grande.</p>
+    <div class="tabla-wrap">
+      <table>
+        <thead><tr><th></th><th>con malaria</th><th>sin malaria</th><th>total</th><th>incidencia</th></tr></thead>
+        <tbody>
+          <tr><td>campesino</td><td>18</td><td>186</td><td>204</td><td>88,2 ‰</td></tr>
+          <tr><td>no campesino</td><td>31</td><td>525</td><td>556</td><td>55,8 ‰</td></tr>
+          <tr><td><b>total</b></td><td><b>49</b></td><td><b>711</b></td><td><b>760</b></td><td></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><b>x² = 2,56</b> según el módulo, frente a un valor crítico de <b>3,84</b>. No lo supera, así
+    que <b>no se puede rechazar la hipótesis nula</b>: con 95 % de confianza, la ocupación campesino
+    <b>no está significativamente asociada</b> a la malaria (p &gt; 0,05).</p>
+    <p><b>Nota de cálculo verificada</b>: con los valores esperados exactos el estadístico es
+    <b>2,61</b>; el módulo llega a 2,56 porque arrastra los esperados redondeados a un decimal
+    (13,2 y 35,8). La conclusión no cambia, ambos quedan por debajo de 3,84.
+    <span class="ref m">M3 · pp. 61-62</span></p>
+  </div>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>Valores críticos, cuadro 3.14 <span class="ref m">M3 · p. 63</span></caption>
+      <thead><tr><th>Significancia (p)</th><th>Chi cuadrado<br><span style="font-size:var(--t-xs)">1 grado de libertad, solo tablas 2×2</span></th><th>Prueba Z<br><span style="font-size:var(--t-xs)">comparar dos promedios</span></th><th>Confianza</th></tr></thead>
+      <tbody>
+        <tr><td>0,001</td><td>10,83</td><td>3,29</td><td>99,999 %</td></tr>
+        <tr><td>0,01</td><td>6,63</td><td>2,58</td><td>99,99 %</td></tr>
+        <tr class="meso"><td><b>0,05</b></td><td><b>3,84</b></td><td><b>1,96</b></td><td><b>95,0 %</b></td></tr>
+        <tr><td>0,10</td><td>2,71</td><td>1,64</td><td>90,0 %</td></tr>
+        <tr><td>0,20</td><td>1,64</td><td>1,28</td><td>80,0 %</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="nota">
+    <p><b>Grados de libertad</b>: número mínimo de frecuencias de las celdas centrales que hay que
+    conocer para completar las demás, dados los totales marginales. En una tabla 2×2 es <b>1</b>.
+    <span class="ref m">M3 · p. 62</span></p>
+    <p><b>Intervalos de confianza</b>: alternativa o complemento a la prueba de significancia, y a
+    veces más informativa. Si los intervalos de dos grupos <b>no se solapan</b>, hay diferencia
+    significativa; si <b>se tocan</b>, no la hay. Y su <b>amplitud</b> informa de la precisión: un
+    intervalo ancho indica pobre precisión muestral.
+    <span class="ref m">M3 · pp. 77-80 · gráf. 3.10, 3.11</span></p>
+  </div>
+
+  <h2 id="sec-18"><span class="n">18</span>Riesgo relativo y razón de posibilidades</h2>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>Las dos medidas de fuerza de asociación
+        <span class="ref m">M3 · pp. 65-75</span></caption>
+      <thead><tr><th>Medida</th><th>Fórmula</th><th>De qué diseño sale</th></tr></thead>
+      <tbody>
+        <tr><td><b>Riesgo relativo</b> (RR)</td><td>incidencia en expuestos ÷ incidencia en no expuestos</td><td><b>Cohortes</b> — hace falta la incidencia</td></tr>
+        <tr><td><b>Razón de posibilidades</b> (OR)</td><td><b>ad ÷ bc</b> · razón de productos cruzados</td><td><b>Caso-control</b>, y también cohortes o transversal</td></tr>
+        <tr><td><i>odds</i> o ventaja</td><td>probabilidad del evento ÷ (1 − probabilidad del evento)</td><td>Es el ingrediente del OR</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="dato">
+    <p><b>Interpretación, común a las dos:</b> <b>= 1</b> ausencia de asociación · <b>&gt; 1</b>
+    exposición de riesgo · <b>&lt; 1</b> factor protector. La magnitud mide la fuerza: un RR de 3,5
+    expresa una asociación más fuerte que uno de 1,4; y un RR de 0,2 más fuerte que uno de 0,7.
+    <span class="ref m">M3 · p. 67</span></p>
+    <p><b>Y la trampa de redacción que el módulo aclara expresamente:</b> un RR u OR igual a 2
+    <b>no</b> significa que los expuestos tengan «dos veces más» riesgo, sino <b>una vez más</b>, es
+    decir el <b>doble</b>, un 100 % de exceso. Un RR de 1,5 significa 0,5 veces más, un <b>50 % de
+    exceso</b>. <span class="ref m">M3 · p. 75</span></p>
+    <p><b>Ejemplo del odds</b>, tomado de Last: si 60 fumadores desarrollan tos crónica y 40 no, el
+    <i>odds</i> a favor de la tos es 60 : 40 = <b>1,5</b>; la <b>probabilidad</b>, en cambio, es
+    60 / 100 = <b>0,6</b>. <span class="ref m">M3 · p. 73</span></p>
+  </div>
+
+  <h2 id="sec-19"><span class="n">19</span>Impacto potencial: la lección central</h2>
+
+  <div class="dato">
+    <p><b>Las cuatro fórmulas</b> <span class="ref m">M3 · pp. 81-82</span></p>
+    <p style="font-family:var(--mono);font-size:var(--t-sm);line-height:1.9">
+      Riesgo atribuible en expuestos &nbsp;&nbsp;RAₑ &nbsp;= &nbsp;Iₑ − Iₙₑ<br>
+      Riesgo atribuible poblacional &nbsp;&nbsp;&nbsp;RAP &nbsp;= &nbsp;I<sub>poblacional</sub> − Iₙₑ<br>
+      Fracción atribuible en expuestos &nbsp;RA % = &nbsp;RAₑ ÷ Iₑ × 100<br>
+      Fracción atribuible poblacional &nbsp;&nbsp;RAP% = &nbsp;RAP ÷ I<sub>poblacional</sub> × 100</p>
+    <p>La última se llama también <b>fracción etiológica</b> y responde a la pregunta operativa:
+    <b>cuánto bajaría la incidencia si elimináramos la exposición</b>. El módulo la califica de «gran
+    trascendencia en salud pública». <span class="ref m">M3 · pp. 82-83</span></p>
+  </div>
+
+  <div class="figura">
+    <svg viewBox="0 0 830 400" role="img" aria-label="Tres pares de barras para hipertensión, cardiomegalia y tabaquismo del estudio de Framingham. El riesgo relativo es mayor en la hipertensión, pero la prevalencia de exposición y la fracción etiológica son mucho mayores en el tabaquismo, que resulta el factor de mayor impacto poblacional.">
+      <text class="rot-mini" x="16" y="18">FRAMINGHAM · EL FACTOR DE MAYOR RIESGO INDIVIDUAL NO ES EL DE MAYOR IMPACTO POBLACIONAL</text>
+      <line class="eje" x1="16" y1="28" x2="814" y2="28"/>
+
+      <text class="rot" x="140" y="58" text-anchor="middle">Riesgo relativo</text>
+      <text class="rot" x="415" y="58" text-anchor="middle">Prevalencia de exposición</text>
+      <text class="rot" x="690" y="58" text-anchor="middle">Fracción etiológica</text>
+
+      <!-- RR: escala 0-3 sobre 180px -->
+      <line x1="60" y1="250" x2="230" y2="250" class="eje"/>
+      <rect x="76"  y="76"  width="34" height="174" rx="3" fill="var(--meso)"/>
+      <rect x="128" y="124" width="34" height="126" rx="3" fill="var(--meso)" opacity=".62"/>
+      <rect x="180" y="136" width="34" height="114" rx="3" fill="var(--meso)" opacity=".42"/>
+      <text class="rot-mini" x="93"  y="70" text-anchor="middle" fill="var(--meso-txt)">2,9</text>
+      <text class="rot-mini" x="145" y="118" text-anchor="middle" fill="var(--meso-txt)">2,1</text>
+      <text class="rot-mini" x="197" y="130" text-anchor="middle" fill="var(--meso-txt)">1,9</text>
+
+      <!-- PE: escala 0-80% sobre 174px -->
+      <line x1="335" y1="250" x2="505" y2="250" class="eje"/>
+      <rect x="351" y="246" width="34" height="4"   rx="2" fill="var(--grafito)"/>
+      <rect x="403" y="228" width="34" height="22"  rx="3" fill="var(--grafito)" opacity=".7"/>
+      <rect x="455" y="94"  width="34" height="156" rx="3" fill="var(--grafito)"/>
+      <text class="rot-mini" x="368" y="240" text-anchor="middle">2 %</text>
+      <text class="rot-mini" x="420" y="222" text-anchor="middle">10 %</text>
+      <text class="rot-mini" x="472" y="88"  text-anchor="middle" fill="var(--tinta)">72 %</text>
+
+      <!-- RAP%: escala 0-45% sobre 174px -->
+      <line x1="610" y1="250" x2="780" y2="250" class="eje"/>
+      <rect x="626" y="236" width="34" height="14"  rx="3" fill="var(--ecto)" opacity=".45"/>
+      <rect x="678" y="212" width="34" height="38"  rx="3" fill="var(--ecto)" opacity=".7"/>
+      <rect x="730" y="98"  width="34" height="152" rx="3" fill="var(--ecto)"/>
+      <text class="rot-mini" x="643" y="230" text-anchor="middle" fill="var(--ecto-txt)">3,6 %</text>
+      <text class="rot-mini" x="695" y="206" text-anchor="middle" fill="var(--ecto-txt)">9,8 %</text>
+      <text class="rot-mini" x="747" y="92"  text-anchor="middle" fill="var(--ecto-txt)">39,5 %</text>
+
+      <!-- leyenda de las tres barras -->
+      <text class="rot-mini" x="16" y="276" fill="var(--tinta)">En cada trío, de izquierda a derecha:</text>
+      <text class="rot-mini" x="16" y="294">1 hipertensión sistólica &#160;·&#160; 2 cardiomegalia &#160;·&#160; 3 tabaquismo</text>
+
+      <rect x="16" y="312" width="798" height="76" rx="6" fill="var(--vidrio)" stroke="var(--linea)" stroke-width="1"/>
+      <text class="rot-mini" x="34" y="334" fill="var(--tinta)">El hipertenso tiene claramente más riesgo que el fumador (RR 2,9 frente a 1,9).</text>
+      <text class="rot-mini" x="34" y="352">Pero si hay que elegir UNA intervención poblacional, es la del tabaco: bajaría la incidencia un 39,5 % frente al 3,6 %.</text>
+      <text class="rot-mini" x="34" y="374" fill="var(--meso-txt)">La razón es la prevalencia de exposición: 2 % contra 72 %. La fracción etiológica es sensible a las DOS cosas.</text>
+    </svg>
+    <p class="desliza">Desliza la figura para verla completa →</p>
+    <figcaption><b>La lección central de la unidad</b> — Y el módulo la sostiene con <i>dos</i>
+    ejemplos independientes. En el brote de <b>cólera amazónico</b> pasa lo mismo, más nítido: el
+    pescado crudo es la asociación más fuerte (RR 4,92) pero solo un 1,2 % de la población lo comía,
+    así que eliminarlo bajaría la incidencia <b>≈ 5 %</b>; el agua no tratada tiene RR menor (3,67)
+    pero la consumía el 68,4 %, y eliminarla bajaría la incidencia <b>≈ 65 %</b>. La inversión va al
+    agua. <span class="ref m">M3 · pp. 84-86 · cuadro 3.21, gráf. 3.12</span></figcaption>
+  </div>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>Brote de cólera en la selva amazónica: RR frente a impacto
+        <span class="ref m">M3 · pp. 68-70, 74, 86</span></caption>
+      <thead><tr><th>Exposición</th><th>RR</th><th>OR</th><th>Prevalencia de exposición</th><th>Fracción etiológica</th></tr></thead>
+      <tbody>
+        <tr class="meso"><td>Pescado crudo</td><td><b>4,92</b></td><td>6,87</td><td>1,2 %</td><td><b>≈ 5 %</b></td></tr>
+        <tr class="ecto"><td>Agua no tratada</td><td>3,67</td><td>3,94</td><td><b>68,4 %</b></td><td><b>≈ 65 %</b></td></tr>
+        <tr><td>Fruta sin lavar</td><td>1,76</td><td>1,83</td><td>42,8 %</td><td>≈ 25 %</td></tr>
+        <tr><td>Arroz recalentado</td><td>1,26</td><td>1,29</td><td>32,3 %</td><td>≈ 8 %</td></tr>
+        <tr><td>Tamal de arroz</td><td>1,18</td><td>1,19</td><td>16,8 %</td><td>≈ 3 %</td></tr>
+        <tr><td>Pescado cocinado</td><td>1,13</td><td>1,14</td><td>12,2 %</td><td>≈ 2 %</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="sec-20"><span class="n">20</span>Estandarización de tasas</h2>
+
+  <div class="caso" id="caso-5">
+    <p class="rot">Cuando ajustar por edad invierte la conclusión</p>
+    <p class="enunciado">País A escasamente industrializado, País B altamente industrializado, mismo
+    año.</p>
+    <div class="tabla-wrap">
+      <table>
+        <thead><tr><th>Mortalidad por mil</th><th>País A</th><th>País B</th></tr></thead>
+        <tbody>
+          <tr><td><b>Cruda</b></td><td>18,6</td><td>28,1</td></tr>
+          <tr class="meso"><td><b>Estandarizada</b></td><td><b>32,4</b></td><td><b>23,7</b></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Las crudas dicen que B está peor. Pero A tiene tasas específicas <b>más altas en todos los
+    grupos de edad</b>: lo que ocurre es que A concentra población joven y B población vieja, y la
+    <b>edad actúa como confusora</b>. Al ajustar, el orden <b>se invierte</b>: la mortalidad es cerca
+    de 40 % más alta en A. <span class="ref m">M3 · pp. 86-90</span></p>
+  </div>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>El método directo, en cuatro pasos <span class="ref m">M3 · pp. 88-89</span></caption>
+      <thead><tr><th>Paso</th><th>Qué se hace</th></tr></thead>
+      <tbody>
+        <tr><td><b>1</b></td><td>Fijar una <b>población estándar</b>. Puede construirse sumando las poblaciones por grupo de edad de las dos que se comparan</td></tr>
+        <tr><td><b>2</b></td><td>Calcular las <b>defunciones esperadas</b> en cada grupo de edad del estándar, aplicando las tasas específicas <b>observadas en cada país</b></td></tr>
+        <tr><td><b>3</b></td><td>Sumar para obtener el <b>total de defunciones esperadas</b> en cada país</td></tr>
+        <tr><td><b>4</b></td><td>Dividir ese total entre la <b>población estándar</b> total → tasa ajustada</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="nota">
+    <p><b>Dos advertencias del propio módulo, que suelen preguntarse.</b> La tasa ajustada <b>solo
+    sirve para comparar</b>: su construcción se basa en la elección <i>arbitraria</i> de un estándar
+    y por eso <b>la magnitud de la cifra carece de valor intrínseco</b>. Y la estandarización
+    <b>no suple</b> las deficiencias de calidad, cobertura ni registro de los datos.
+    <span class="ref m">M3 · p. 90</span></p>
+    <p>Además: una <b>tasa cruda</b> es en el fondo un <b>promedio ponderado</b> de las tasas
+    específicas, donde los pesos son las proporciones de población en cada categoría. Por eso depende
+    críticamente de la composición etaria. <span class="ref m">M3 · p. 87</span></p>
+  </div>
+
+  <p class="hint-q"><span>Seis preguntas. La segunda y la cuarta son las que separan aprobados.</span><button class="btn btn-todas" type="button">Abrir todas</button></p>
+
+  <details class="q"><summary>¿Cuándo se usa RR y cuándo OR?</summary>
+    <div class="a"><p><b>RR</b> cuando se dispone de la <b>incidencia</b> en expuestos y no expuestos,
+    lo que exige un <b>estudio de cohortes</b>: se parte de gente sana y se observa quién enferma.
+    <b>OR</b> cuando se parte de gente ya enferma y se busca su exposición previa —<b>caso-control</b>—
+    porque ahí no se puede calcular incidencia. El OR es conceptual y matemáticamente <b>análogo</b>
+    al RR y, cuando la enfermedad es de <b>baja frecuencia</b>, es una buena aproximación de él.
+    <span class="ref m">M3 · pp. 65, 72, 74</span></p></div>
+  </details>
+
+  <details class="q"><summary>Un RR de 2 significa que los expuestos tienen «dos veces más» riesgo. ¿Verdadero o falso?</summary>
+    <div class="a"><p><b>Falso</b>, y el módulo lo aclara explícitamente. Un RR u OR de 2 significa
+    <b>una vez más</b> riesgo, es decir el <b>doble</b> del riesgo de los no expuestos: un <b>100 %
+    de exceso</b>. Un RR de 1,5 significa 0,5 veces más, un 50 % de exceso. El punto de referencia es
+    la unidad. <span class="ref m">M3 · p. 75</span></p></div>
+  </details>
+
+  <details class="q"><summary>Dos tasas de incidencia son 88,2 y 55,8 por mil. ¿Hay asociación?</summary>
+    <div class="a"><p><b>No se puede saber mirándolas.</b> Es el ejemplo de la malaria: parece una
+    diferencia grande, pero al aplicar chi cuadrado el estadístico no alcanza el valor crítico de
+    3,84, así que <b>no se rechaza la hipótesis nula</b>. Con 95 % de confianza, la ocupación
+    campesino no está significativamente asociada a la malaria. Es la mejor demostración del módulo
+    contra la lectura ingenua de dos tasas. <span class="ref m">M3 · pp. 61-62</span></p></div>
+  </details>
+
+  <details class="q"><summary>¿Por qué el factor con mayor RR no es siempre el que hay que atacar?</summary>
+    <div class="a"><p>Porque la decisión poblacional depende de la <b>fracción etiológica</b>
+    (RAP %), y esa es sensible a <b>dos</b> cosas: al exceso de riesgo <i>y</i> a la <b>prevalencia
+    de exposición</b> en la población. En Framingham la hipertensión tiene el mayor RR (2,9) pero solo
+    la padecía el 2 %, así que su fracción etiológica es 3,6 %; el tabaquismo tiene menor RR (1,9)
+    pero lo practicaba el 72 %, y su fracción etiológica es 39,5 %. Con recursos limitados, la
+    intervención de mayor impacto es la del tabaco. <span class="ref m">M3 · pp. 84-85</span></p></div>
+  </details>
+
+  <details class="q"><summary>¿Para qué sirve una tasa estandarizada y para qué no?</summary>
+    <div class="a"><p><b>Sirve</b> para comparar dos poblaciones eliminando el efecto confusor de una
+    tercera variable, normalmente la edad. <b>No sirve</b> como cifra en sí misma: al basarse en la
+    elección arbitraria de una población estándar, <b>su magnitud carece de valor intrínseco</b>. Y
+    <b>no arregla</b> problemas de calidad, cobertura ni registro de los datos.
+    <span class="ref m">M3 · p. 90</span></p></div>
+  </details>
+
+  <details class="q"><summary>¿Qué significa que dos intervalos de confianza al 95 % no se solapen?</summary>
+    <div class="a"><p>Que hay <b>diferencia estadísticamente significativa</b> entre los dos
+    estimadores: el límite superior de uno y el inferior del otro «no se tocan». Si <b>se solapan</b>,
+    no la hay. Y por separado, la <b>amplitud</b> del intervalo informa de la <b>precisión</b>: un
+    intervalo ancho indica pobre precisión muestral.
+    <span class="ref m">M3 · pp. 78-80</span></p></div>
+  </details>
+<div class="pie-lamina"><button class="btn btn-hecho" data-hecho="lamina-6" aria-pressed="false">✓ Marcar repasada</button><span class="crece"></span><a class="btn" href="#lamina-5" data-jump>← Anterior</a><a class="btn" href="#lamina-7" data-jump>Siguiente →</a></div></article>
+
+<article class="plate s3" id="lamina-7">
+  <div class="tab"><span>Vigilancia</span></div>
+
+  <p class="eyebrow">MOPECE · Unidad 4 <span class="ref m">M4 · pp. 6-28</span></p>
+
+  <h1>Cómo se monta un sistema</h1>
+
+  <p class="standfirst">La vigilancia dejó de ser una rama de la epidemiología para convertirse en
+  <b>disciplina propia</b>. Su definición lleva un sesgo declarado que conviene entender: prefiere
+  ser <i>práctica y rápida</i> antes que exacta y completa.</p>
+
+  <div class="dato">
+    <p><b>Vigilancia</b>: análisis, interpretación y difusión sistemática de datos colectados,
+    generalmente usando métodos que se distinguen por ser <b>prácticos, uniformes y rápidos, más que
+    por su exactitud o totalidad</b>, que sirven para observar tendencias en tiempo, lugar y persona,
+    con lo que pueden observarse o anticiparse cambios para realizar acciones oportunas.
+    <span class="ref m">M4 · p. 8</span></p>
+    <p><b>Tres características</b> que el módulo destaca: es un proceso <b>continuo y
+    sistemático</b> —ni aislado ni sin método—; es un proceso de <b>escrutinio de tendencias</b>; y
+    es un proceso de <b>comparación</b> entre lo observado y lo esperado.
+    <span class="ref m">M4 · p. 8</span></p>
+  </div>
+
+  <h2 id="sec-21"><span class="n">21</span>Las tres polémicas de terminología</h2>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>Por qué se dice «vigilancia en salud pública» y no «vigilancia epidemiológica»
+        <span class="ref m">M4 · pp. 8-10</span></caption>
+      <thead><tr><th>Pregunta</th><th>Asamblea Mundial de la Salud, 1968 (Raska)</th><th>Langmuir — la postura que prevaleció</th></tr></thead>
+      <tbody>
+        <tr><td>¿Incluye la <b>investigación</b>?</td><td>Sí, la investigación epidemiológica es parte de la vigilancia</td><td><b>No</b>: la vigilancia puede orientarla, pero es una <b>función separada</b></td></tr>
+        <tr><td>¿Incluye el <b>control</b>?</td><td>Sí, hasta asegurar que se tomó acción efectiva</td><td><b>No</b>: el último eslabón es aplicar medidas, pero <b>decidir y ejecutar recae en la autoridad sanitaria</b>, no en el epidemiólogo</td></tr>
+        <tr><td>¿Es <b>monitoreo</b>?</td><td>Se usaban indistintamente</td><td><b>No</b>: la vigilancia es de <b>poblaciones</b>; el monitoreo se aplica a <b>grupos o individuos</b> y evalúa la relación entre intervención y cambio</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="nota">
+    <p><b>La definición del CDC, 1992</b>, citada textualmente por el módulo: la vigilancia en salud
+    pública es la recolección, análisis, interpretación y diseminación continua y sistemática de
+    datos sobre la salud. «<b>El concepto de vigilancia en salud pública no incluye la administración
+    de programas de prevención y control, aunque sí incluye un vínculo intencionado con tales
+    programas.</b>» <span class="ref m">M4 · p. 10</span></p>
+  </div>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>Hitos históricos <span class="ref m">M4 · p. 7 · cuadro 4.1</span></caption>
+      <thead><tr><th>Siglo</th><th>Hito</th></tr></thead>
+      <tbody>
+        <tr><td><b>XIV</b></td><td>Venecia nombra tres guardianes de salud y detiene los barcos infectados <b>cuarenta días</b>: nace el concepto de <b>cuarentena</b></td></tr>
+        <tr><td>XVI</td><td>Primeros registros de estadísticas de mortalidad, de uso censal</td></tr>
+        <tr><td><b>XVII</b></td><td><b>Boletín de Mortalidad semanal</b> de Londres: el primer sistema que ya ilustra los <b>tres principios actuales</b> —recolectar, analizar e interpretar, difundir para la acción. <b>John Graunt (1662)</b> estima la población de Londres y cuenta muertes por causa específica</td></tr>
+        <tr><td>XVIII</td><td><b>Johann Peter Frank (1766)</b> propone en Alemania una «policía médica» para hacer cumplir la política de salud</td></tr>
+        <tr><td>XIX</td><td><b>William Farr (1838)</b> funda las bases del sistema moderno; <b>Lemuel Shattuck (1850)</b> recomienda censo decenal, nomenclatura estandarizada y datos por edad, sexo, ocupación, localidad y nivel socioeconómico</td></tr>
+        <tr><td><b>XX</b></td><td><b>Langmuir (1963)</b> promueve el concepto moderno; <b>Raska (1965)</b> lo desarrolla e internacionaliza; la <b>OMS crea en Ginebra la primera unidad de vigilancia (1965)</b>; guía la <b>erradicación de la viruela (1980)</b>; el <b>CDC (1992)</b> formula el concepto amplio. Al final del siglo se reconoce como <b>función esencial de la salud pública</b></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="sec-22"><span class="n">22</span>Las cuatro etapas</h2>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>Etapas y actividades <span class="ref m">M4 · p. 15 · cuadro 4.3</span></caption>
+      <thead><tr><th>Etapa</th><th>Actividades</th></tr></thead>
+      <tbody>
+        <tr class="ecto"><td><b>1 · Recolección de datos</b></td><td>Operacionalizar guías normativas · <b>detección</b> de casos · <b>notificación</b> · <b>clasificación</b> de casos · <b>validación</b> de los datos</td></tr>
+        <tr class="meso"><td><b>2 · Análisis</b></td><td>Consolidación de datos · análisis de las variables epidemiológicas básicas</td></tr>
+        <tr class="endoo"><td><b>3 · Interpretación</b></td><td>Comparación con datos previos e inclusión de variables locales no consideradas en la recolección</td></tr>
+        <tr><td><b>4 · Difusión</b></td><td>Elaboración de materiales para los distintos niveles de decisión</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="sec-23"><span class="n">23</span>Definición de caso</h2>
+
+  <div class="dato">
+    <p><b>No es la definición clínica.</b> Cinco requisitos: <b>simple</b>, <b>aceptable</b>,
+    <b>estable en el tiempo</b> —para que las tendencias sean comparables—, <b>validada en el
+    terreno</b>, y con un equilibrio explícito: <b>sensible</b> para captar los casos verdaderos de
+    forma sencilla y rápida, <b>específica</b> para que los falsos positivos no sean excesivos.
+    <span class="ref m">M4 · p. 16</span></p>
+  </div>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>Los tres niveles de certeza diagnóstica <span class="ref m">M4 · p. 17</span></caption>
+      <thead><tr><th>Nivel</th><th>Clínica</th><th>Laboratorio</th></tr></thead>
+      <tbody>
+        <tr><td><b>Sospechoso</b></td><td>Signos y síntomas compatibles</td><td>Sin evidencia alguna: ausente, pendiente <b>o negativa</b></td></tr>
+        <tr><td><b>Probable</b></td><td>Signos y síntomas compatibles</td><td>Sin evidencia <b>definitiva</b></td></tr>
+        <tr><td><b>Confirmado</b></td><td><b>Con o sin</b> signos y síntomas</td><td>Evidencia <b>definitiva</b></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="nota">
+    <p><b>Fíjate en la asimetría</b>: un caso <b>confirmado puede no tener clínica</b> — manda el
+    laboratorio. Y un caso <b>sospechoso puede tener laboratorio negativo</b> y seguir siendo
+    sospechoso. La definición de caso es «el instrumento básico»: de ella dependen la detección, la
+    notificación y la clasificación. <span class="ref m">M4 · p. 17</span></p>
+  </div>
+
+  <h2 id="sec-24"><span class="n">24</span>Fuentes de datos y tipos de vigilancia</h2>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>Las cinco fuentes <span class="ref m">M4 · pp. 18-19</span></caption>
+      <thead><tr><th>Fuente</th><th>Qué es</th></tr></thead>
+      <tbody>
+        <tr><td><b>Notificación de casos</b></td><td>El <b>procedimiento medular</b>: los servicios informan rutinaria y <b>obligatoriamente</b> a la autoridad sanitaria</td></tr>
+        <tr><td><b>Registros</b></td><td>Sistemas permanentes: registro civil, censos, laboratorio, historias clínicas, consulta externa y urgencias, declaración obligatoria, cáncer, certificados de defunción, necropsias, monitoreo ambiental, <b>registros policiales</b>, ausentismo escolar y laboral, <b>registros veterinarios de reservorios animales</b>, venta de medicamentos</td></tr>
+        <tr><td><b>Investigación de casos y brotes</b></td><td>Búsqueda activa y exhaustiva ante sospecha de epidemia, sea por rumores, vigilancia o análisis de registros</td></tr>
+        <tr><td><b>Encuestas</b></td><td>Información en un punto de tiempo: serológicas, entomológicas, de morbilidad, socioeconómicas, etnográficas, de demografía y salud</td></tr>
+        <tr><td><b>Rumores</b></td><td>Opiniones espontáneas <b>no confirmadas</b> originadas en la comunidad. El módulo las lista como fuente legítima</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>Los tres tipos de vigilancia: la ventaja de una es la desventaja de la otra
+        <span class="ref m">M4 · p. 20</span></caption>
+      <thead><tr><th>Tipo</th><th>Cómo opera</th><th>Ventaja</th><th>Desventaja</th></tr></thead>
+      <tbody>
+        <tr class="ecto"><td><b>Pasiva</b></td><td>Cada nivel <b>envía</b> datos rutinariamente al inmediato superior</td><td>Fácil, de bajo costo, <b>sostenible</b></td><td>Pierde casos: <b>menor integridad</b></td></tr>
+        <tr class="meso"><td><b>Activa</b></td><td>El equipo <b>acude a la fuente</b> y busca intencionalmente, revisando registros</td><td><b>Integridad</b>: reduce la probabilidad de no detectar casos que sí ocurren</td><td>Costosa, difícil de sostener</td></tr>
+        <tr class="endoo"><td><b>Centinela</b></td><td><b>Unidades</b>, <b>muestra</b>, <b>condición</b> y <b>sitio</b> centinela preconcebidos</td><td>Selectiva; útil donde no hay representatividad nacional</td><td>No representativa por sí sola</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="dato">
+    <p><b>Cuándo está indicada la vigilancia activa</b>, según el módulo: cuando la <b>integridad</b>
+    es lo más importante — enfermedades en fase de <b>erradicación o eliminación</b> (poliomielitis,
+    sarampión), daños de <b>alta prioridad sanitaria</b> (mortalidad infantil y materna), tras una
+    <b>exposición ambiental</b> de la comunidad, y <b>durante e inmediatamente después de una
+    epidemia</b>. <span class="ref m">M4 · p. 20</span></p>
+  </div>
+
+  <h2 id="sec-25"><span class="n">25</span>Notificación y subregistro</h2>
+
+  <div class="nota">
+    <p><b>Notificación negativa.</b> El formulario debe enviarse <b>también en los periodos sin
+    casos</b>, para que el sistema pueda distinguir «no ocurrió nada» de «nadie miró». Indicador que
+    el módulo cita: en la vigilancia de <b>parálisis flácida aguda</b>, no menos del <b>80 % de las
+    unidades notificadoras</b> debe informar semanalmente. <span class="ref m">M4 · p. 22</span></p>
+    <p><b>Notificación cruzada.</b> Cuando una jurisdicción detecta un caso que <b>reside en otra</b>,
+    es la de residencia la que debe hacer la búsqueda de contactos. Exige <b>flujo
+    bidireccional</b>. <span class="ref m">M4 · p. 22</span></p>
+  </div>
+
+  <div class="figura">
+    <svg viewBox="0 0 830 400" role="img" aria-label="Cascada de siete bifurcaciones desde la población total hasta el caso notificado. En cada paso se pierde una parte: personas sin síntomas, con síntomas pero sin quejas, con quejas que no buscan atención, atendidas sin diagnóstico, con diagnóstico presuntivo no confirmado, y casos confirmados que no se notifican.">
+      <text class="rot-mini" x="16" y="18">POR QUÉ NINGÚN SISTEMA VE TODOS LOS CASOS · CADA BIFURCACIÓN ES UNA FUGA Y UN PUNTO DE INTERVENCIÓN</text>
+      <line class="eje" x1="16" y1="28" x2="814" y2="28"/>
+      <rect x="24" y="48" width="140" height="38" rx="5" fill="var(--ecto-tenue)" stroke="var(--ecto)" stroke-width="2"/>
+      <text class="rot-mini" x="94" y="72" text-anchor="middle" fill="var(--ecto-txt)">POBLACIÓN</text>
+
+      <g stroke="var(--grafito)" stroke-width="1.4" fill="none">
+        <path d="M94,86 v22 h-46 v18"/><path d="M94,86 v22 h46 v18"/>
+        <path d="M140,166 v22 h-40 v18"/><path d="M140,166 v22 h48 v18"/>
+        <path d="M188,246 v22 h-40 v18"/><path d="M188,246 v22 h56 v18"/>
+        <path d="M244,326 v14"/>
+      </g>
+
+      <text class="rot-mini" x="48" y="140" text-anchor="middle">sin síntomas</text>
+      <text class="rot-mini" x="48" y="156" text-anchor="middle" fill="var(--meso-txt)">se pierde</text>
+      <rect x="112" y="126" width="56" height="40" rx="5" fill="var(--papel)" stroke="var(--grafito)" stroke-width="1.4"/>
+      <text class="rot-mini" x="140" y="143" text-anchor="middle" fill="var(--tinta)">con</text>
+      <text class="rot-mini" x="140" y="158" text-anchor="middle" fill="var(--tinta)">síntomas</text>
+
+      <text class="rot-mini" x="100" y="220" text-anchor="middle">sin quejas</text>
+      <text class="rot-mini" x="100" y="236" text-anchor="middle" fill="var(--meso-txt)">se pierde</text>
+      <rect x="160" y="206" width="56" height="40" rx="5" fill="var(--papel)" stroke="var(--grafito)" stroke-width="1.4"/>
+      <text class="rot-mini" x="188" y="223" text-anchor="middle" fill="var(--tinta)">busca</text>
+      <text class="rot-mini" x="188" y="238" text-anchor="middle" fill="var(--tinta)">atención</text>
+
+      <text class="rot-mini" x="148" y="300" text-anchor="middle">sin diagnóstico</text>
+      <text class="rot-mini" x="148" y="316" text-anchor="middle" fill="var(--meso-txt)">se pierde</text>
+      <rect x="212" y="286" width="64" height="40" rx="5" fill="var(--papel)" stroke="var(--grafito)" stroke-width="1.4"/>
+      <text class="rot-mini" x="244" y="303" text-anchor="middle" fill="var(--tinta)">diagnóstico</text>
+      <text class="rot-mini" x="244" y="318" text-anchor="middle" fill="var(--tinta)">presuntivo</text>
+
+      <rect x="196" y="340" width="96" height="40" rx="5" fill="var(--endo-tenue)" stroke="var(--endo)" stroke-width="2"/>
+      <text class="rot-mini" x="244" y="357" text-anchor="middle" fill="var(--endo-txt)">CASO</text>
+      <text class="rot-mini" x="244" y="372" text-anchor="middle" fill="var(--endo-txt)">NOTIFICADO</text>
+
+      <rect x="330" y="60" width="484" height="150" rx="6" fill="var(--vidrio)" stroke="var(--linea)" stroke-width="1"/>
+      <text class="rot-mini" x="348" y="84" fill="var(--tinta)">TRES AMENAZAS A LA VALIDEZ DE LOS DATOS</text>
+      <text class="rot-mini" x="348" y="106">· subregistro &#160;&#160;· sesgos &#160;&#160;· duplicación</text>
+      <line x1="348" y1="120" x2="796" y2="120" stroke="var(--linea)" stroke-width="1"/>
+      <text class="rot-mini" x="348" y="142" fill="var(--tinta)">CUATRO PROPIEDADES A CONTROLAR</text>
+      <text class="rot-mini" x="348" y="164">integridad · consistencia · uniformidad · confiabilidad</text>
+      <text class="rot-mini" x="348" y="192" fill="var(--meso-txt)">Se minimiza reclutando todas las unidades notificadoras</text>
+
+      <rect x="330" y="226" width="484" height="154" rx="6" fill="var(--papel)" stroke="var(--aviso)" stroke-width="1.6"/>
+      <text class="rot-mini" x="348" y="250" fill="var(--aviso-txt)">LAS TRES RAZONES DEL SUBREGISTRO</text>
+      <text class="rot-mini" x="348" y="274" fill="var(--tinta)">1 · Desconocimiento</text>
+      <text class="rot-mini" x="348" y="290">ignorar qué enfermedad, cómo y a quién notificar</text>
+      <text class="rot-mini" x="348" y="312" fill="var(--tinta)">2 · Actitudes negativas</text>
+      <text class="rot-mini" x="348" y="328">tiempo, dificultad, falta de incentivo o de retroalimentación</text>
+      <text class="rot-mini" x="348" y="350" fill="var(--tinta)">3 · Malentendidos</text>
+      <text class="rot-mini" x="348" y="366">confidencialidad, creer que no notificar no es grave</text>
+    </svg>
+    <p class="desliza">Desliza la figura para verla completa →</p>
+    <figcaption><b>Cómo se usa</b> — Esta cascada explica por qué la <b>sensibilidad</b> de un sistema
+    nunca es del 100 % y por qué la <b>integridad</b> es el atributo que la vigilancia activa viene a
+    rescatar. Cada bifurcación es también un punto donde intervenir: educar a la población, mejorar el
+    acceso, reforzar el laboratorio, o simplemente recordar al notificador que notifique.
+    <span class="ref m">M4 · pp. 24-25, 45 · fig. 4.1, adaptada de Fox, Hall y Elveback, 1970</span></figcaption>
+  </div>
+
+  <h2 id="sec-26"><span class="n">26</span>Eventos bajo vigilancia y el RSI-2005</h2>
+
+  <div class="dato">
+    <p><b>Cuatro clases de objeto bajo vigilancia</b>: enfermedades, síndromes, factores de riesgo y
+    otros eventos de salud pública. La lista de priorización del módulo llega hasta los <b>eventos de
+    salud positivos</b> —lactancia materna, ejercicio físico regular, salud ocupacional— y los
+    <b>determinantes sociales</b> —violencia urbana y doméstica, abuso sexual, desplazamiento de
+    poblaciones, desempleo, desigualdades en salud. <span class="ref m">M4 · p. 13</span></p>
+    <p><b>Reglamento Sanitario Internacional 2005</b>, notificación obligatoria a la OMS:
+    <b>viruela</b>, <b>poliomielitis por virus salvaje</b>, <b>influenza humana por nuevo serotipo</b>
+    y <b>SARS</b>. Bajo el RSI, «evento» se define como la manifestación de una enfermedad o un suceso
+    potencialmente patógeno. <span class="ref m">M4 · p. 13</span></p>
+  </div>
+
+  <div class="nota">
+    <p><b>El algoritmo de decisión del Anexo 2 del RSI-2005.</b> Un evento constituye potencial
+    emergencia de salud pública de importancia internacional —y debe notificarse a la OMS— si la
+    respuesta es <b>sí a 2 de estas 4</b>:</p>
+    <ol>
+      <li>¿Tiene el evento una <b>repercusión de salud pública grave</b>?</li>
+      <li>¿Se trata de un evento <b>inusitado o imprevisto</b>?</li>
+      <li>¿Existe riesgo significativo de <b>propagación internacional</b>?</li>
+      <li>¿Existe riesgo significativo de <b>restricciones a los viajes o al comercio</b>?</li>
+    </ol>
+    <p><span class="ref m">M4 · p. 13</span></p>
+  </div>
+
+  <p class="hint-q"><span>Cinco preguntas sobre la operación del sistema.</span><button class="btn btn-todas" type="button">Abrir todas</button></p>
+
+  <details class="q"><summary>Diferencia entre vigilancia y monitoreo</summary>
+    <div class="a"><p>La <b>vigilancia</b> tiene que ver con <b>poblaciones</b>; el <b>monitoreo</b>
+    se aplica a <b>grupos específicos o individuos</b>. Y el monitoreo se define por evaluar de forma
+    continua una <b>relación entre intervención y cambio</b>, con ajuste constante del desempeño
+    respecto a los resultados: es una herramienta de <b>gerencia</b>. Lo único que comparten es ser
+    rutinas continuas de medición con métodos rápidos y prácticos.
+    <span class="ref m">M4 · p. 9</span></p></div>
+  </details>
+
+  <details class="q"><summary>¿Un caso confirmado necesita signos y síntomas?</summary>
+    <div class="a"><p><b>No.</b> El caso confirmado se define por <b>evidencia definitiva de
+    laboratorio, con o sin signos y síntomas</b> compatibles. Manda el laboratorio. Simétricamente, un
+    caso <b>sospechoso</b> tiene clínica compatible y laboratorio ausente, pendiente <b>o incluso
+    negativo</b>. <span class="ref m">M4 · p. 17</span></p></div>
+  </details>
+
+  <details class="q"><summary>¿Por qué hay que enviar el formulario cuando no hubo casos?</summary>
+    <div class="a"><p>Es la <b>notificación negativa</b>. Sin ella el sistema no puede distinguir
+    «no ocurrió nada» de «la unidad no miró o no reportó». Garantiza que la situación epidemiológica
+    se mantiene bajo control y que las unidades sostienen la vigilancia continua. El módulo cita como
+    indicador de operatividad que en parálisis flácida aguda <b>no menos del 80 %</b> de las unidades
+    informe semanalmente. <span class="ref m">M4 · p. 22</span></p></div>
+  </details>
+
+  <details class="q"><summary>¿Cuándo conviene vigilancia activa en vez de pasiva?</summary>
+    <div class="a"><p>Cuando la <b>integridad</b> es lo prioritario, porque la activa reduce la
+    probabilidad de no detectar casos que están ocurriendo. El módulo enumera cuatro situaciones:
+    enfermedades en fase de <b>erradicación o eliminación</b> (poliomielitis, sarampión), <b>daños de
+    alta prioridad sanitaria</b> (mortalidad infantil, materna), tras una <b>exposición ambiental</b>
+    de la comunidad, y <b>durante e inmediatamente después de una epidemia</b>. El precio es el costo
+    y la dificultad de sostenerla. <span class="ref m">M4 · p. 20</span></p></div>
+  </details>
+
+  <details class="q"><summary>¿Qué tres principios deben guiar la selección de un evento a vigilar?</summary>
+    <div class="a"><p><b>1</b> El evento debe tener <b>clara importancia en salud pública</b>.
+    <b>2</b> Deben <b>existir acciones específicas</b> de salud pública que puedan tomarse.
+    <b>3</b> Los datos relevantes deben estar <b>fácilmente disponibles</b>. Y el evento debe ser
+    específico, medible y <b>vulnerable a la intervención</b>: vigilar lo que no se puede cambiar no
+    tiene sentido. <span class="ref m">M4 · p. 14</span></p></div>
+  </details>
+<div class="pie-lamina"><button class="btn btn-hecho" data-hecho="lamina-7" aria-pressed="false">✓ Marcar repasada</button><span class="crece"></span><a class="btn" href="#lamina-6" data-jump>← Anterior</a><a class="btn" href="#lamina-8" data-jump>Siguiente →</a></div></article>
+
+<article class="plate s4" id="lamina-8">
+  <div class="tab"><span>Curva y corredor</span></div>
+
+  <p class="eyebrow">MOPECE · Unidad 4 <span class="ref m">M4 · pp. 29-47</span></p>
+
+  <h1>Detectar la epidemia y evaluar el sistema</h1>
+
+  <p class="standfirst">Dos instrumentos gráficos que se confunden y no son lo mismo: la
+  <b>curva epidémica</b> muestra <i>lo observado</i>; el <b>corredor endémico</b> muestra
+  <i>lo esperado</i>. Se usan <b>superpuestos</b>, y ahí está su potencia.</p>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>La distinción, que es pregunta directa del módulo
+        <span class="ref m">M4 · pp. 31-33, 39</span></caption>
+      <thead><tr><th></th><th>Curva epidémica</th><th>Corredor endémico</th></tr></thead>
+      <tbody>
+        <tr><td>Qué muestra</td><td><b>Lo observado</b> en un periodo concreto</td><td><b>Lo esperado</b> en un año cualquiera</td></tr>
+        <tr><td>De dónde sale</td><td>Las frecuencias de ese periodo</td><td>El comportamiento de <b>siete o más años previos</b>, excluyendo los epidémicos</td></tr>
+        <tr><td>Forma</td><td>Histograma, distribución habitualmente <b>asimétrica</b></td><td><b>Tres curvas</b> —endémica y dos límites— que delimitan cuatro zonas</td></tr>
+        <tr><td>Para qué sirve</td><td>Conocer la <b>velocidad de transmisión</b></td><td>Determinar <b>alarma epidémica</b> y predecir epidemias</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="dato">
+    <p><b>Los tres elementos de la curva epidémica</b>, y lo que enseña cada uno
+    <span class="ref m">M4 · p. 32</span></p>
+    <ul>
+      <li><b>Rama ascendente</b>: su <b>pendiente</b> indica la <b>velocidad de propagación</b>,
+      asociada al modo de transmisión del agente y al tamaño de la población susceptible.</li>
+      <li><b>Punto máximo o meseta</b>: puede alcanzarse naturalmente <b>o quedar truncado por una
+      intervención temprana</b>.</li>
+      <li><b>Rama descendente</b>: su pendiente indica la velocidad de <b>agotamiento de la población
+      susceptible</b>, sea natural o por efecto de las medidas de control.</li>
+    </ul>
+    <p>Es decir: se lee la <b>pendiente</b>, no solo el pico.</p>
+  </div>
+
+  <h2 id="sec-27"><span class="n">27</span>El corredor endémico y sus cuatro zonas</h2>
+
+  <div class="figura">
+    <svg viewBox="0 0 830 470" role="img" aria-label="Corredor endémico de meningitis meningocócica construido con los datos de 1993 a 1999. Cuatro bandas apiladas: zona de éxito por debajo del límite inferior, zona de seguridad hasta la curva endémica, zona de alarma hasta el umbral epidémico, y zona de epidemia por encima. Sobre él se superpone la curva del año 2000, que rebasa el umbral en once de los doce meses.">
+      <text class="rot-mini" x="16" y="18">MENINGITIS MENINGOCÓCICA · CORREDOR 1993-1999 CON EL AÑO 2000 SUPERPUESTO</text>
+      <line class="eje" x1="16" y1="28" x2="814" y2="28"/>
+
+      <!-- zonas: y de 400 (0 casos) a 60 (50 casos) -> 6.8 px por caso -->
+      <!-- epidemia -->
+      <path d="M80,400 L80,304 L140,340 L200,312 L260,312 L320,298 L380,272 L440,284 L500,291 L560,312 L620,312 L680,332 L740,332 L740,60 L80,60 Z" fill="var(--meso-tenue)" opacity=".55"/>
+      <!-- alarma -->
+      <path d="M80,400 L80,304 L140,340 L200,312 L260,312 L320,298 L380,272 L440,284 L500,291 L560,312 L620,312 L680,332 L740,332 L740,400 Z" fill="var(--aviso-tenue)" opacity=".8"/>
+      <!-- seguridad: hasta la curva endémica -->
+      <path d="M80,400 L80,325 L140,352 L200,332 L260,346 L320,325 L380,325 L440,291 L500,332 L560,346 L620,332 L680,339 L740,352 L740,400 Z" fill="var(--endo-tenue)" opacity=".75"/>
+      <!-- éxito: hasta el límite inferior -->
+      <path d="M80,400 L80,366 L140,366 L200,352 L260,366 L320,366 L380,346 L440,332 L500,346 L560,359 L620,366 L680,366 L740,359 L740,400 Z" fill="var(--vidrio)"/>
+
+      <!-- líneas límite -->
+      <polyline points="80,304 140,340 200,312 260,312 320,298 380,272 440,284 500,291 560,312 620,312 680,332 740,332" fill="none" stroke="var(--meso)" stroke-width="2.4"/>
+      <polyline points="80,325 140,352 200,332 260,346 320,325 380,325 440,291 500,332 560,346 620,332 680,339 740,352" fill="none" stroke="var(--endo)" stroke-width="2" stroke-dasharray="7 4"/>
+      <polyline points="80,366 140,366 200,352 260,366 320,366 380,346 440,332 500,346 560,359 620,366 680,366 740,359" fill="none" stroke="var(--grafito)" stroke-width="1.6" stroke-dasharray="4 4"/>
+
+      <!-- año 2000 observado -->
+      <polyline points="80,305 140,325 200,346 260,264 320,251 380,183 440,74 500,94 560,115 620,135 680,183 740,230" fill="none" stroke="var(--ecto)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <g fill="var(--ecto)">
+        <circle cx="80" cy="305" r="4"/><circle cx="140" cy="325" r="4"/><circle cx="200" cy="346" r="4"/>
+        <circle cx="260" cy="264" r="4"/><circle cx="320" cy="251" r="4"/><circle cx="380" cy="183" r="4"/>
+        <circle cx="440" cy="74" r="4"/><circle cx="500" cy="94" r="4"/><circle cx="560" cy="115" r="4"/>
+        <circle cx="620" cy="135" r="4"/><circle cx="680" cy="183" r="4"/><circle cx="740" cy="230" r="4"/>
+      </g>
+
+      <!-- ejes -->
+      <line x1="80" y1="400" x2="770" y2="400" class="eje"/>
+      <line x1="80" y1="60" x2="80" y2="400" class="eje"/>
+      <g class="rot-mini" fill="var(--grafito)">
+        <text x="70" y="404" text-anchor="end">0</text><text x="70" y="336" text-anchor="end">10</text>
+        <text x="70" y="268" text-anchor="end">20</text><text x="70" y="200" text-anchor="end">30</text>
+        <text x="70" y="132" text-anchor="end">40</text><text x="70" y="64" text-anchor="end">50</text>
+        <text x="80" y="420" text-anchor="middle">E</text><text x="140" y="420" text-anchor="middle">F</text>
+        <text x="200" y="420" text-anchor="middle">M</text><text x="260" y="420" text-anchor="middle">A</text>
+        <text x="320" y="420" text-anchor="middle">M</text><text x="380" y="420" text-anchor="middle">J</text>
+        <text x="440" y="420" text-anchor="middle">J</text><text x="500" y="420" text-anchor="middle">A</text>
+        <text x="560" y="420" text-anchor="middle">S</text><text x="620" y="420" text-anchor="middle">O</text>
+        <text x="680" y="420" text-anchor="middle">N</text><text x="740" y="420" text-anchor="middle">D</text>
+      </g>
+      <text class="rot-mini" x="24" y="52">casos</text>
+
+      <!-- rótulos de zona -->
+      <text class="rot-mini" x="822" y="120" text-anchor="end" fill="var(--meso-txt)">EPIDEMIA</text>
+      <text class="rot-mini" x="822" y="316" text-anchor="end" fill="var(--aviso-txt)">ALARMA</text>
+      <text class="rot-mini" x="822" y="344" text-anchor="end" fill="var(--endo-txt)">SEGURIDAD</text>
+      <text class="rot-mini" x="822" y="382" text-anchor="end" fill="var(--grafito)">ÉXITO</text>
+
+      <rect x="16" y="434" width="798" height="30" rx="5" fill="var(--vidrio)" stroke="var(--linea)" stroke-width="1"/>
+      <text class="rot-mini" x="34" y="453" fill="var(--tinta)">La curva de 2000 rebasa el umbral epidémico en ONCE de los doce meses. La alarma se podía dar en FEBRERO.</text>
+    </svg>
+    <div class="leyenda">
+      <div class="me"><i></i><span><b>Umbral epidémico</b>límite superior. Frecuencia máxima esperada. Medida de <em>dispersión</em>: cuartil superior</span></div>
+      <div class="en"><i></i><span><b>Curva endémica</b>línea central. Frecuencia promedio esperada. Medida de <em>tendencia central</em>: mediana</span></div>
+      <div><i style="background:none;height:0;border-top:3px dashed var(--grafito)"></i><span><b>Nivel de seguridad</b>límite inferior. Frecuencia mínima esperada. Cuartil inferior</span></div>
+      <div class="ec"><i></i><span><b>Año 2000 observado</b>la curva epidémica que se superpone al corredor</span></div>
+    </div>
+    <p class="desliza">Desliza la figura para verla completa →</p>
+    <figcaption><b>Cómo se usa</b> — Cada <b>cambio de zona debe disparar una acción</b> sobre el
+    sistema: desde revalidar los datos y supervisar las unidades notificadoras hasta implementar
+    medidas de emergencia. Construido con los datos del cuadro 4.5 del módulo por el método de tres
+    pasos: ordenar las frecuencias de cada mes, localizar q1, mediana y q3, y graficar.
+    <span class="ref m">M4 · pp. 33-35 · gráf. 4.5, cuadro 4.5</span></figcaption>
+  </div>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>Las cuatro zonas, de abajo arriba <span class="ref m">M4 · pp. 33-34</span></caption>
+      <thead><tr><th>Zona</th><th>Franja delimitada por</th></tr></thead>
+      <tbody>
+        <tr><td><b>Éxito</b></td><td>La línea basal (cero) y el <b>límite inferior</b></td></tr>
+        <tr class="endoo"><td><b>Seguridad</b></td><td>El límite inferior y la <b>curva endémica</b></td></tr>
+        <tr><td><b>Alarma</b></td><td>La curva endémica y el <b>límite superior</b></td></tr>
+        <tr class="meso"><td><b>Epidemia</b></td><td>Por <b>encima del umbral epidémico</b></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="dato">
+    <p><b>Cómo se construye, en tres pasos</b> <span class="ref m">M4 · pp. 34-35</span></p>
+    <ol>
+      <li>Para <b>cada unidad de tiempo</b> del año —mes o semana— ordenar de menor a mayor las
+      frecuencias observadas en la serie de años. Es decir: ordenar todos los «eneros», luego todos
+      los «febreros», y así.</li>
+      <li>Localizar la <b>mediana</b>, el <b>primer cuartil</b> y el <b>tercer cuartil</b>. Con siete
+      años ya ordenados: <b>q1 = 2.ª posición, mediana = 4.ª, q3 = 6.ª</b>.</li>
+      <li>Graficar las tres series y trazar los límites.</li>
+    </ol>
+    <p>Requisito: <b>siete o más años</b>. Y <b>los años epidémicos deben excluirse</b>. Si se
+    sospecha inestabilidad, considerar más años. <span class="ref m">M4 · p. 34</span></p>
+  </div>
+
+  <div class="nota">
+    <p><b>Inconsistencia de la fuente, y vale como lección.</b> El Ejercicio 4.3 pide construir el
+    corredor «para el periodo <b>1993-1999</b>», pero el método de la p. 34 ordena <b>excluir los años
+    epidémicos</b> — y 1999 lo es sin duda: <b>213 casos</b> frente a una mediana anual de 123.
+    Calculadas las dos versiones, incluir 1999 <b>infla los umbrales</b> —junio pasa de 13 a 19— y por
+    tanto <b>retrasa la alarma un mes</b>. Que es exactamente la razón de existir de la regla de
+    exclusión. <span class="ref m">M4 · pp. 34, 38</span></p>
+  </div>
+
+  <h2 id="sec-28"><span class="n">28</span>Las tres tendencias temporales</h2>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>Y el aviso que las acompaña <span class="ref m">M4 · pp. 29-31</span></caption>
+      <thead><tr><th>Tendencia</th><th>Definición</th></tr></thead>
+      <tbody>
+        <tr><td><b>Secular</b></td><td>Patrón de variación, regular o no, por <b>largos periodos</b></td></tr>
+        <tr><td><b>Cíclica</b></td><td>Patrón <b>regular</b> en periodos <b>mayores a un año</b></td></tr>
+        <tr><td><b>Estacional</b></td><td>Patrón <b>regular</b> entre <b>estaciones</b> del año</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="nota">
+    <p><b>Usar tasas, no casos.</b> El módulo lo repite para lugar y para persona: un número alto de
+    casos <b>puede deberse a una población mayor</b> y no necesariamente a una incidencia o un riesgo
+    altos. <span class="ref m">M4 · pp. 31</span></p>
+    <p>Y sobre la <b>interpretación</b>: antes de concluir hay que descartar explicaciones
+    alternativas que producen resultados <b>espurios</b> — aumento de población, migración, nuevos
+    métodos diagnósticos, mejora del sistema de notificación, <b>cambio en la definición de caso</b>,
+    aparición de tratamientos efectivos, y problemas de validez por subregistro, sesgos o duplicación.
+    <span class="ref m">M4 · p. 40</span></p>
+  </div>
+
+  <h2 id="sec-29"><span class="n">29</span>Los siete atributos de calidad</h2>
+
+  <div class="tabla-wrap">
+    <table>
+      <caption>El núcleo examinable de la evaluación <span class="ref m">M4 · pp. 43-46</span></caption>
+      <thead><tr><th>Atributo</th><th>Definición</th><th>Cómo se mide o dónde falla</th></tr></thead>
+      <tbody>
+        <tr><td><b>Sencillez</b></td><td>Facilidad de operación del sistema y de cada componente</td><td>Un sistema simple suele ser más <b>flexible</b> y más <b>oportuno</b>, con menos recursos</td></tr>
+        <tr><td><b>Flexibilidad</b></td><td>Adaptarse a cambios con <b>costo adicional mínimo</b> en tiempo, personal o dinero</td><td>Se valora <b>retrospectivamente</b>: observando cómo respondió a una demanda nueva</td></tr>
+        <tr><td><b>Aceptabilidad</b></td><td><b>Voluntad</b> de personas y organizaciones de participar</td><td>Influida sobre todo por el <b>tiempo que consume</b> elaborar el reporte. Debe aceptarla también el sujeto, con garantía de <b>confidencialidad</b></td></tr>
+        <tr class="ecto"><td><b>Sensibilidad</b></td><td>Habilidad de <b>detectar</b> los casos y los brotes que se propone detectar</td><td>Validar datos, verificar calidad, y estimar la <b>fracción de reporte</b>: qué proporción del total de casos de la comunidad capta el sistema</td></tr>
+        <tr class="meso"><td><b>Valor predictivo positivo</b></td><td>Proporción de casos notificados que <b>verdaderamente son</b> casos</td><td>Exige <b>confirmación de laboratorio</b>. Un VPP bajo significa investigar casos que no son y detectar <b>falsas epidemias</b></td></tr>
+        <tr><td><b>Representatividad</b></td><td>Describir con exactitud la distribución del evento por <b>tiempo, lugar y persona</b></td><td>Comparar con otra fuente, por ejemplo una <b>encuesta probabilística</b>. Delata poblaciones sistemáticamente <b>excluidas</b></td></tr>
+        <tr><td><b>Oportunidad</b></td><td>Disponibilidad de los datos <b>a tiempo para intervenir</b></td><td>Mide el retraso entre <b>todas</b> las etapas, no solo la notificación: también identificar el problema y retroalimentar</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="dato">
+    <p><b>Dos matices que separan al que entendió del que memorizó.</b></p>
+    <p><b>Sensibilidad baja no invalida el sistema</b> si se mantiene <b>razonablemente constante</b>:
+    aún sirve para vigilar <i>tendencias</i>. Lo que rompe la serie es que la sensibilidad
+    <b>cambie</b> —mayor conocimiento de la enfermedad, nueva prueba diagnóstica, cambio de método— y
+    esos «<b>artefactos de vigilancia</b>» son a menudo el <b>paso inicial</b> de la investigación de
+    un brote. <span class="ref m">M4 · pp. 44-45</span></p>
+    <p>El <b>VPP mejora aumentando la especificidad</b> de la definición de caso, y también con la
+    prevalencia de la condición. Ahí se cierra el círculo con el equilibrio
+    sensibilidad/especificidad de la definición de caso. <span class="ref m">M4 · p. 45</span></p>
+  </div>
+
+  <div class="nota">
+    <p><b>Los cinco aspectos clave de la evaluación</b>, por si preguntan el marco y no los atributos:
+    <b>1</b> importancia del evento para la salud pública —que depende de su magnitud (prevalencia),
+    velocidad (incidencia), severidad (mortalidad, letalidad) y factibilidad de prevención—;
+    <b>2</b> pertinencia de objetivos y componentes; <b>3</b> utilidad de la información procesada;
+    <b>4</b> <b>costo</b> del sistema; <b>5</b> calidad, es decir los siete atributos.
+    <span class="ref m">M4 · p. 43</span></p>
+    <p><b>Y el cierre de la unidad</b>, que es una lista de verificación en sí misma: los elementos
+    clave del éxito son <b>una buena red local de gente motivada</b>, comunicación eficiente,
+    definición de caso y mecanismo de notificación <b>claros y sencillos</b>, principios de
+    epidemiología <b>simples pero firmes</b>, buena retroalimentación, respuesta rápida y soporte
+    básico de laboratorio. <span class="ref m">M4 · p. 47</span></p>
+  </div>
+
+  <h2 id="sec-30"><span class="n">30</span>Glosario de los tres módulos</h2>
+
+  <p>Ordenado alfabéticamente, con el módulo y la página donde está definido. Es la lista mínima que
+  hay que dominar.</p>
+
+  <div class="glosario">
+    <div><b>Agente</b><span>Microorganismo, sustancia química o forma de radiación cuya presencia, presencia excesiva o <b>ausencia relativa</b> es esencial para que ocurra la enfermedad. <span class="ref m">M2 · p. 23</span></span></div>
+    <div><b>Asociación</b><span>Relación de dependencia estadística entre dos o más variables. <span class="ref m">M3 · p. 59</span></span></div>
+    <div><b>Contaminación</b><span>Presencia de agentes vivos en superficies del cuerpo u objetos inanimados. No es infección. <span class="ref m">M2 · p. 25</span></span></div>
+    <div><b>Corredor endémico</b><span>Representación de la distribución esperada de una enfermedad en un año, a partir de siete o más años previos. Tres curvas, cuatro zonas. <span class="ref m">M4 · pp. 32-34</span></span></div>
+    <div><b>Curva epidémica</b><span>Representación gráfica de las frecuencias observadas de la enfermedad en el tiempo. <span class="ref m">M4 · p. 31</span></span></div>
+    <div><b>Distribución</b><span>Resumen completo de las frecuencias de los valores o categorías de la medición realizada. <span class="ref m">M3 · p. 13</span></span></div>
+    <div><b>Enfermedad emergente</b><span>Transmisible cuya incidencia aumentó en los últimos 25 años del s. XX, o que amenaza aumentar. <span class="ref m">M2 · p. 11</span></span></div>
+    <div><b>Enfermedad reemergente</b><span>Transmisible ya conocida que reaparece tras un descenso significativo y aparente control. <span class="ref m">M2 · p. 12</span></span></div>
+    <div><b>Enfermedad transmisible</b><span>Causada por un agente infeccioso específico o sus productos tóxicos, que se manifiesta por la transmisión del agente de un reservorio a un huésped susceptible. <span class="ref m">M2 · p. 11</span></span></div>
+    <div><b>Epidemiología</b><span>Estudio de la frecuencia y distribución de los eventos de salud y de sus determinantes en poblaciones humanas, <b>y la aplicación</b> de ese estudio a la prevención y el control. <span class="ref m">M2 · p. 9</span></span></div>
+    <div><b>Factor de riesgo</b><span>Característica detectable asociada a probabilidad incrementada de daño. Identificable, cuantificable y en lo posible modificable. <span class="ref m">M3 · p. 59</span></span></div>
+    <div><b>Fracción etiológica</b><span>Riesgo atribuible poblacional en porcentaje. Cuánto bajaría la incidencia si se eliminara la exposición. <span class="ref m">M3 · p. 82</span></span></div>
+    <div><b>Fuente de infección</b><span>Persona, animal, objeto o sustancia desde donde el agente pasa a un huésped. <span class="ref m">M2 · p. 31</span></span></div>
+    <div><b>Historia natural</b><span>Evolución de una enfermedad en un individuo a través del tiempo, <b>en ausencia de intervención</b>. <span class="ref m">M2 · p. 21</span></span></div>
+    <div><b>Huésped</b><span>Persona o animal vivo, incluidas aves y artrópodos, que en circunstancias naturales permite la subsistencia o alojamiento de un agente infeccioso. <span class="ref m">M2 · p. 24</span></span></div>
+    <div><b>Incidencia</b><span>Casos nuevos surgidos de una población en riesgo en un periodo. Mide <b>velocidad</b>; estima el riesgo absoluto. <span class="ref m">M3 · p. 36</span></span></div>
+    <div><b>Infección</b><span>Entrada y desarrollo o multiplicación de un agente infeccioso en el organismo. <span class="ref m">M2 · p. 25</span></span></div>
+    <div><b>Infección inaparente</b><span>Presencia del agente sin signos ni síntomas manifiestos. Sinónimos: subclínica, asintomática, oculta. <span class="ref m">M2 · p. 26</span></span></div>
+    <div><b>Infectividad</b><span>Capacidad del agente de alojarse y multiplicarse dentro de un huésped. <span class="ref m">M2 · p. 25</span></span></div>
+    <div><b>Infestación</b><span>Desarrollo <b>sobre</b> el cuerpo de agentes patógenos, como piojos. <span class="ref m">M2 · p. 25</span></span></div>
+    <div><b>Letalidad</b><span>Casos fatales sobre el total de casos. Solo entre la población enferma. <span class="ref m">M2 · p. 27</span> <span class="ref m">M3 · p. 41</span></span></div>
+    <div><b>Medición</b><span>Aplicar una escala estándar a una variable o a un conjunto de valores. <span class="ref m">M3 · p. 6</span></span></div>
+    <div><b>Patogenicidad</b><span>Capacidad del agente de producir enfermedad en personas <b>infectadas</b>. <span class="ref m">M2 · p. 25</span></span></div>
+    <div><b>Periodo de incubación</b><span>De la exposición al <b>primer signo o síntoma</b>. <span class="ref m">M2 · p. 32</span></span></div>
+    <div><b>Periodo de latencia</b><span>De la infección hasta que la persona se vuelve <b>infecciosa</b>. <span class="ref m">M2 · p. 33</span></span></div>
+    <div><b>Periodo de transmisibilidad</b><span>Intervalo durante el cual el agente puede transferirse. <span class="ref m">M2 · p. 33</span></span></div>
+    <div><b>Portador</b><span>Individuo infectado que alberga el agente sin síntomas y es fuente potencial de infección. <span class="ref m">M2 · p. 31</span></span></div>
+    <div><b>Prevalencia</b><span>Número total de casos existentes, sin distinguir si son nuevos. Mide <b>magnitud</b>. <span class="ref m">M3 · p. 35</span></span></div>
+    <div><b>Probabilidad</b><span>Número de eventos que ocurren dentro de un número de eventos posibles. De 0 a 1. <span class="ref m">M3 · p. 31</span></span></div>
+    <div><b>Razón de posibilidades</b><span><i>Odds ratio</i>. Cociente entre dos <i>odds</i>; en ambos diseños se reduce a <b>ad/bc</b>. <span class="ref m">M3 · p. 74</span></span></div>
+    <div><b>Reservorio</b><span>Hábitat normal donde vive y se multiplica el agente y del cual depende para sobrevivir. <span class="ref m">M2 · p. 30</span></span></div>
+    <div><b>Resistencia</b><span>Conjunto de mecanismos corporales de defensa contra la invasión, la multiplicación o las toxinas. <span class="ref m">M2 · pp. 40-41</span></span></div>
+    <div><b>Riesgo absoluto</b><span>Incidencia de enfermedad en la población o grupo. <span class="ref m">M3 · p. 65</span></span></div>
+    <div><b>Riesgo relativo</b><span>Razón entre el riesgo absoluto de los expuestos y el de los no expuestos. <span class="ref m">M3 · p. 67</span></span></div>
+    <div><b>Susceptible</b><span>Quien no posee resistencia suficiente contra un agente para protegerse si entra en contacto con él. <span class="ref m">M3 · p. 40</span></span></div>
+    <div><b>Tasa</b><span>Medida de la rapidez de cambio por unidad de población y de <b>tiempo-persona</b>. <span class="ref m">M3 · p. 31</span></span></div>
+    <div><b>Variable</b><span>Cualquier característica o atributo que puede asumir valores diferentes. <span class="ref m">M3 · p. 10</span></span></div>
+    <div><b>Vector</b><span>Insecto o portador vivo que transporta el agente hasta un susceptible, su comida o su ambiente. <span class="ref m">M2 · p. 34</span></span></div>
+    <div><b>Vigilancia</b><span>Análisis, interpretación y difusión sistemática de datos, con métodos prácticos, uniformes y rápidos <b>más que exactos o completos</b>. <span class="ref m">M4 · p. 8</span></span></div>
+    <div><b>Virulencia</b><span>Capacidad del agente de producir casos <b>graves y fatales</b>. <span class="ref m">M2 · p. 27</span></span></div>
+    <div><b>Zoonosis</b><span>Infección transmisible que en condiciones naturales ocurre entre vertebrados y el hombre. <span class="ref m">M2 · p. 30</span></span></div>
+  </div>
+
+  <p class="hint-q"><span>Seis preguntas finales, las de mayor rendimiento.</span><button class="btn btn-todas" type="button">Abrir todas</button></p>
+
+  <details class="q"><summary>Diferencia entre curva epidémica y corredor endémico</summary>
+    <div class="a"><p>La <b>curva epidémica</b> representa las frecuencias <b>observadas</b> de la
+    enfermedad en un periodo concreto —días, semanas o meses— y sirve para conocer la <b>velocidad de
+    transmisión</b>. El <b>corredor endémico</b> describe en forma resumida la distribución
+    <b>esperada</b> durante un año cualquiera, destilada del comportamiento de <b>siete o más años
+    previos</b>, y sirve para determinar situaciones de <b>alarma epidémica</b> y predecir epidemias.
+    Se usan <b>superpuestos</b>: la curva observada sobre el corredor esperado.
+    <span class="ref m">M4 · pp. 31-33, 39</span></p></div>
+  </details>
+
+  <details class="q"><summary>¿Qué medidas estadísticas dan las tres curvas del corredor?</summary>
+    <div class="a"><p>La <b>curva endémica</b> es una medida de <b>tendencia central</b> —mediana o
+    promedio—, y los <b>dos límites</b> son medidas de <b>dispersión</b> —cuartil superior e inferior,
+    o desviación estándar. Con siete años ordenados por mes: <b>q1 en la 2.ª posición, mediana en la
+    4.ª, q3 en la 6.ª</b>. <span class="ref m">M4 · pp. 33-35</span></p></div>
+  </details>
+
+  <details class="q"><summary>¿Por qué hay que excluir los años epidémicos al construir el corredor?</summary>
+    <div class="a"><p>Porque el corredor representa lo <b>esperado en un año normal</b>. Incluir un año
+    epidémico <b>infla los umbrales</b> y por tanto <b>retrasa la alarma</b>: la epidemia siguiente
+    tendrá que ser más grande para cruzar la línea. Con los datos del cuadro 4.5, incluir 1999 —213
+    casos frente a una mediana de 123— sube el umbral de junio de 13 a 19 y retrasa la detección un
+    mes. <span class="ref m">M4 · p. 34</span></p></div>
+  </details>
+
+  <details class="q"><summary>¿Qué indica la pendiente de la rama ascendente de una curva epidémica?</summary>
+    <div class="a"><p>La <b>velocidad de propagación</b> de la epidemia, que está asociada al <b>modo de
+    transmisión</b> del agente y al <b>tamaño de la población susceptible</b>. La rama descendente
+    indica la velocidad de <b>agotamiento</b> de los susceptibles, sea natural o por efecto de las
+    medidas de control. Y el pico puede aparecer <b>truncado</b> si hubo intervención temprana.
+    <span class="ref m">M4 · p. 32</span></p></div>
+  </details>
+
+  <details class="q"><summary>Un sistema tiene sensibilidad baja. ¿Sirve para algo?</summary>
+    <div class="a"><p><b>Sí</b>, para vigilar <b>tendencias</b>, siempre que esa sensibilidad baja se
+    mantenga <b>razonablemente constante</b>. Lo que invalida la serie es que la sensibilidad
+    <b>cambie</b> —por mayor conocimiento de la enfermedad, una prueba diagnóstica nueva o un cambio
+    de método—, porque entonces un aumento de casos puede ser un <b>artefacto de vigilancia</b> y no un
+    aumento real. Buscar esos artefactos es a menudo el primer paso al investigar un brote.
+    <span class="ref m">M4 · pp. 44-45</span></p></div>
+  </details>
+
+  <details class="q"><summary>¿Qué consecuencias tiene un valor predictivo positivo bajo?</summary>
+    <div class="a"><p>Dos, y ambas caras: <b>se investigan casos que no son casos</b>, y <b>se
+    identifican epidemias que no existen</b>. Los falsos positivos conducen a intervenciones
+    innecesarias y las falsas epidemias a investigaciones costosas y a inquietud indebida en la
+    comunidad. Se mejora <b>aumentando la especificidad de la definición de caso</b>.
+    <span class="ref m">M4 · p. 45</span></p></div>
+  </details>
+<div class="pie-lamina"><button class="btn btn-hecho" data-hecho="lamina-8" aria-pressed="false">✓ Marcar repasada</button><span class="crece"></span><a class="btn" href="#lamina-7" data-jump>← Anterior</a></div></article>
+
+    <footer class="pie">
+      GBR · GBR · 2026 · datos verificados contra las fuentes citadas en cada afirmación
+    </footer>
+  </main>
+</div>
+
+<script src="sistema.js?v=1787174217"></script>
+</body>
+</html>

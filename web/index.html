@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="es" data-theme="light" data-sitio="gbr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>GBR · Guías de estudio</title>
+<link rel="stylesheet" href="sistema.css?v=1787174217">
+<style>
+/* Solo lo propio de la portada; el resto viene del sistema */
+.hero{max-width:1240px;margin:0 auto;padding:48px 24px 10px}
+.hero h1{font-size:clamp(32px,5vw,54px);line-height:1.02;margin:0 0 14px}
+.hero p{max-width:var(--medida);margin:0 0 28px;color:var(--grafito);font-size:var(--t-md)}
+.hero .buscador{max-width:640px;flex:none}
+.hero .buscador input{font-size:var(--t-base);min-height:52px;padding:0 18px 0 46px;
+  border:1px solid var(--marca-borde);border-radius:var(--r-tarjeta);background:var(--papel)}
+.hero .buscador .lupa{left:17px;font-size:var(--t-md);color:var(--marca)}
+.zona{max-width:1240px;margin:0 auto;padding:26px 24px 72px}
+.rotulo{font-family:var(--display);font-size:var(--t-xs);letter-spacing:.04em;
+  color:var(--grafito);margin:38px 0 16px;padding-bottom:8px;border-bottom:1px solid var(--linea)}
+.rejilla{display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(340px,1fr))}
+.tarjeta{background:var(--papel);border:1px solid var(--linea);border-radius:var(--r-tarjeta);
+  padding:24px;display:flex;flex-direction:column;
+  transition:border-color .18s var(--ease-out),transform .18s var(--ease-out)}
+@media (hover:hover) and (pointer:fine){
+  .tarjeta:hover{border-color:var(--marca-borde);transform:translateY(-2px)}
+}
+@media (prefers-reduced-motion:reduce){ .tarjeta:hover{transform:none} }
+.tarjeta .curso{font-family:var(--display);font-size:var(--t-xs);letter-spacing:.04em;
+  color:var(--grafito)}
+.tarjeta h2{font-family:var(--display);font-size:var(--t-xl);line-height:var(--lh-xl);font-weight:600;
+  margin:6px 0 16px;border:none;padding:0}
+.tarjeta h2 a{color:var(--tinta);text-decoration:none}
+.tarjeta h2 a:hover{color:var(--marca)}
+.cifras{display:grid;grid-template-columns:repeat(3,1fr);gap:14px 10px;margin:0 0 18px;
+  padding:16px 0;border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)}
+.cifras div{font-family:var(--display);font-size:var(--t-xs);color:var(--grafito);line-height:1.3}
+.cifras b{display:block;font-family:var(--body);font-size:var(--t-lg);color:var(--marca);line-height:1}
+.secs{margin:0 0 18px}
+.secs>summary{cursor:pointer;font-family:var(--display);font-size:var(--t-sm);color:var(--marca);
+  list-style:none;padding:8px 0;min-height:38px;display:flex;align-items:center}
+.secs>summary::-webkit-details-marker{display:none}
+.secs>summary::before{content:"▸ "} .secs[open]>summary::before{content:"▾ "}
+.secs ul{list-style:none;margin:8px 0 0;padding:0}
+.secs li.lam{margin:0 0 8px}
+.secs a{text-decoration:none;color:var(--tinta);display:block;padding:7px 9px;
+  border-radius:var(--r-control);font-size:var(--t-sm);min-height:36px}
+.secs a:hover{background:var(--marca-suave);color:var(--marca)}
+.secs li.lam>a .k{display:block;font-family:var(--display);font-size:var(--t-xs);
+  letter-spacing:.04em;color:var(--grafito)}
+.secs li.lam>a .t{font-family:var(--display);font-size:var(--t-sm);font-weight:600}
+.secs li.lam ul{border-left:1px solid var(--linea);margin-left:9px;padding-left:7px}
+.secs li.lam ul a{color:var(--grafito)}
+.btn-abrir{margin-top:auto;justify-content:center;background:var(--marca);border-color:var(--marca);
+  color:var(--papel);font-weight:600}
+.btn-abrir:hover{opacity:.9;color:var(--papel)}
+.extras{list-style:none;margin:0;padding:0;display:grid;gap:12px;
+  grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+.extras a{display:block;background:var(--meso-tenue);border-radius:var(--r-tarjeta);
+  padding:16px 18px;text-decoration:none;color:var(--tinta)}
+.extras b{font-family:var(--display);font-size:var(--t-base);display:block;margin-bottom:2px}
+.extras span{font-size:var(--t-sm);color:var(--grafito)}
+.vacia{background:var(--papel);border:1px dashed var(--linea);border-radius:var(--r-tarjeta);
+  padding:28px;color:var(--grafito);font-size:var(--t-sm)}
+footer{max-width:1240px;margin:0 auto;padding:0 24px 54px;color:var(--grafito);
+  font-family:var(--display);font-size:var(--t-xs);letter-spacing:.04em;line-height:1.8}
+@media (max-width:600px){ .hero{padding:32px 16px 8px} .zona{padding:20px 16px 60px}
+  .cifras{grid-template-columns:repeat(2,1fr)} }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <span class="marca">GBR<b>Epidemiología y salud pública</b></span>
+  <span class="crece"></span>
+  <button class="btn" id="tema"><span id="tema-icono">☾</span> <span id="tema-txt">Oscuro</span></button>
+</header>
+
+<section class="hero">
+  <h1>Guías de estudio</h1>
+  <p>Los módulos condensados en conceptos, con la procedencia exacta de cada dato. Busca un término y entra directo a la sección donde está definido.</p>
+  <div class="buscador">
+    <span class="lupa">⌕</span>
+    <input type="search" id="q" placeholder="Buscar guía, lámina o sección…" autocomplete="off"
+           aria-label="Buscar entre todas las guías">
+    <ul class="resultados" id="res"></ul>
+  </div>
+</section>
+
+<div class="zona">
+  <p class="rotulo">Guías desarrolladas</p>
+  <div class="rejilla">
+    <article class="tarjeta">
+      <div class="cab">
+        <span class="curso">GBR · 2026</span>
+        <h2><a href="guia-01-epidemiologia-mopece.html">Guía 1 · Epidemiología</a></h2>
+      </div>
+      <div class="cifras">
+        <div><b>8</b>láminas</div>
+        <div><b>5</b>casos resueltos</div>
+        <div><b>41</b>preguntas</div>
+        <div><b>212</b>citas con página</div>
+        <div><b>37</b>tablas</div>
+        <div><b>9</b>figuras</div>
+      </div>
+      <details class="secs">
+        <summary>Ver las 38 secciones</summary>
+        <ul><li class="lam"><a href="guia-01-epidemiologia-mopece.html#lamina-1"><span class="k">Marco y enfoque</span><span class="t">Qué mide la epidemiología</span></a><ul><li><a href="guia-01-epidemiologia-mopece.html#sec-01">El espectro de las enfermedades</a></li><li><a href="guia-01-epidemiologia-mopece.html#sec-02">Emergentes y reemergentes</a></li><li><a href="guia-01-epidemiologia-mopece.html#sec-03">Tiempo, lugar y persona</a></li></ul></li><li class="lam"><a href="guia-01-epidemiologia-mopece.html#lamina-2"><span class="k">Causalidad</span><span class="t">Por qué enferma quien enferma</span></a><ul><li><a href="guia-01-epidemiologia-mopece.html#sec-04">Los dos modelos</a></li><li><a href="guia-01-epidemiologia-mopece.html#sec-05">Historia natural y niveles de prevención</a></li></ul></li><li class="lam"><a href="guia-01-epidemiologia-mopece.html#lamina-3"><span class="k">Cadena epidemiológica</span><span class="t">Los seis eslabones</span></a><ul><li><a href="guia-01-epidemiologia-mopece.html#sec-06">Agente: cuatro términos que no son sinónimos</a></li><li><a href="guia-01-epidemiologia-mopece.html#sec-07">Infección, contaminación, infestación</a></li><li><a href="guia-01-epidemiologia-mopece.html#sec-08">Reservorio, fuente y portador</a></li><li><a href="guia-01-epidemiologia-mopece.html#sec-09">Modo de transmisión</a></li><li><a href="guia-01-epidemiologia-mopece.html#sec-10">Huésped susceptible e inmunidad</a></li></ul></li><li class="lam"><a href="guia-01-epidemiologia-mopece.html#lamina-4"><span class="k">Datos y resumen</span><span class="t">Cómo se ordenan los datos</span></a><ul><li><a href="guia-01-epidemiologia-mopece.html#sec-11">Los cuatro niveles de medición</a></li><li><a href="guia-01-epidemiologia-mopece.html#sec-12">Qué gráfico para qué variable</a></li><li><a href="guia-01-epidemiologia-mopece.html#sec-13">Tendencia central y dispersión</a></li></ul></li><li class="lam"><a href="guia-01-epidemiologia-mopece.html#lamina-5"><span class="k">Frecuencia</span><span class="t">Prevalencia, incidencia y tasas</span></a><ul><li><a href="guia-01-epidemiologia-mopece.html#sec-14">Prevalencia frente a incidencia</a></li><li><a href="guia-01-epidemiologia-mopece.html#sec-15">Todos los indicadores, con su denominador</a></li></ul></li><li class="lam"><a href="guia-01-epidemiologia-mopece.html#lamina-6"><span class="k">Asociación e impacto</span><span class="t">Comparar y medir la fuerza</span></a><ul><li><a href="guia-01-epidemiologia-mopece.html#sec-16">La tabla 2×2 cambia de sentido según el diseño</a></li><li><a href="guia-01-epidemiologia-mopece.html#sec-17">Chi cuadrado: ¿hay diferencia?</a></li><li><a href="guia-01-epidemiologia-mopece.html#sec-18">Riesgo relativo y razón de posibilidades</a></li><li><a href="guia-01-epidemiologia-mopece.html#sec-19">Impacto potencial: la lección central</a></li><li><a href="guia-01-epidemiologia-mopece.html#sec-20">Estandarización de tasas</a></li></ul></li><li class="lam"><a href="guia-01-epidemiologia-mopece.html#lamina-7"><span class="k">Vigilancia</span><span class="t">Cómo se monta un sistema</span></a><ul><li><a href="guia-01-epidemiologia-mopece.html#sec-21">Las tres polémicas de terminología</a></li><li><a href="guia-01-epidemiologia-mopece.html#sec-22">Las cuatro etapas</a></li><li><a href="guia-01-epidemiologia-mopece.html#sec-23">Definición de caso</a></li><li><a href="guia-01-epidemiologia-mopece.html#sec-24">Fuentes de datos y tipos de vigilancia</a></li><li><a href="guia-01-epidemiologia-mopece.html#sec-25">Notificación y subregistro</a></li><li><a href="guia-01-epidemiologia-mopece.html#sec-26">Eventos bajo vigilancia y el RSI-2005</a></li></ul></li><li class="lam"><a href="guia-01-epidemiologia-mopece.html#lamina-8"><span class="k">Curva y corredor</span><span class="t">Detectar la epidemia y evaluar el sistema</span></a><ul><li><a href="guia-01-epidemiologia-mopece.html#sec-27">El corredor endémico y sus cuatro zonas</a></li><li><a href="guia-01-epidemiologia-mopece.html#sec-28">Las tres tendencias temporales</a></li><li><a href="guia-01-epidemiologia-mopece.html#sec-29">Los siete atributos de calidad</a></li><li><a href="guia-01-epidemiologia-mopece.html#sec-30">Glosario de los tres módulos</a></li></ul></li></ul>
+      </details>
+      <a class="btn btn-abrir" href="guia-01-epidemiologia-mopece.html">Abrir la guía →</a>
+    </article></div>
+
+
+  <p class="rotulo">Próximas guías</p>
+  <div class="vacia">Al añadir la siguiente guía aparecerá aquí, con el mismo formato: láminas navegables, conceptos definidos, preguntas de repaso y cada dato con su módulo y su página.</div>
+</div>
+
+<footer>GBR · material propio derivado de los Módulos de Principios de Epidemiología para el Control de Enfermedades (MOPECE), OPS/OMS, 2.ª ed. revisada · cada afirmación lleva su módulo y su página impresa</footer>
+
+<script id="indice" type="application/json">[{"g": "Guía 1 · Epidemiología", "t": "Guía 1 · Epidemiología", "u": "guia-01-epidemiologia-mopece.html", "k": "guía"}, {"g": "Guía 1 · Epidemiología", "t": "Qué mide la epidemiología", "u": "guia-01-epidemiologia-mopece.html#lamina-1", "k": "Marco y enfoque"}, {"g": "Guía 1 · Epidemiología", "t": "El espectro de las enfermedades", "u": "guia-01-epidemiologia-mopece.html#sec-01", "k": "Marco y enfoque"}, {"g": "Guía 1 · Epidemiología", "t": "Emergentes y reemergentes", "u": "guia-01-epidemiologia-mopece.html#sec-02", "k": "Marco y enfoque"}, {"g": "Guía 1 · Epidemiología", "t": "Tiempo, lugar y persona", "u": "guia-01-epidemiologia-mopece.html#sec-03", "k": "Marco y enfoque"}, {"g": "Guía 1 · Epidemiología", "t": "Por qué enferma quien enferma", "u": "guia-01-epidemiologia-mopece.html#lamina-2", "k": "Causalidad"}, {"g": "Guía 1 · Epidemiología", "t": "Los dos modelos", "u": "guia-01-epidemiologia-mopece.html#sec-04", "k": "Causalidad"}, {"g": "Guía 1 · Epidemiología", "t": "Historia natural y niveles de prevención", "u": "guia-01-epidemiologia-mopece.html#sec-05", "k": "Causalidad"}, {"g": "Guía 1 · Epidemiología", "t": "Los seis eslabones", "u": "guia-01-epidemiologia-mopece.html#lamina-3", "k": "Cadena epidemiológica"}, {"g": "Guía 1 · Epidemiología", "t": "Agente: cuatro términos que no son sinónimos", "u": "guia-01-epidemiologia-mopece.html#sec-06", "k": "Cadena epidemiológica"}, {"g": "Guía 1 · Epidemiología", "t": "Infección, contaminación, infestación", "u": "guia-01-epidemiologia-mopece.html#sec-07", "k": "Cadena epidemiológica"}, {"g": "Guía 1 · Epidemiología", "t": "Reservorio, fuente y portador", "u": "guia-01-epidemiologia-mopece.html#sec-08", "k": "Cadena epidemiológica"}, {"g": "Guía 1 · Epidemiología", "t": "Modo de transmisión", "u": "guia-01-epidemiologia-mopece.html#sec-09", "k": "Cadena epidemiológica"}, {"g": "Guía 1 · Epidemiología", "t": "Huésped susceptible e inmunidad", "u": "guia-01-epidemiologia-mopece.html#sec-10", "k": "Cadena epidemiológica"}, {"g": "Guía 1 · Epidemiología", "t": "Cómo se ordenan los datos", "u": "guia-01-epidemiologia-mopece.html#lamina-4", "k": "Datos y resumen"}, {"g": "Guía 1 · Epidemiología", "t": "Los cuatro niveles de medición", "u": "guia-01-epidemiologia-mopece.html#sec-11", "k": "Datos y resumen"}, {"g": "Guía 1 · Epidemiología", "t": "Qué gráfico para qué variable", "u": "guia-01-epidemiologia-mopece.html#sec-12", "k": "Datos y resumen"}, {"g": "Guía 1 · Epidemiología", "t": "Tendencia central y dispersión", "u": "guia-01-epidemiologia-mopece.html#sec-13", "k": "Datos y resumen"}, {"g": "Guía 1 · Epidemiología", "t": "Prevalencia, incidencia y tasas", "u": "guia-01-epidemiologia-mopece.html#lamina-5", "k": "Frecuencia"}, {"g": "Guía 1 · Epidemiología", "t": "Prevalencia frente a incidencia", "u": "guia-01-epidemiologia-mopece.html#sec-14", "k": "Frecuencia"}, {"g": "Guía 1 · Epidemiología", "t": "Todos los indicadores, con su denominador", "u": "guia-01-epidemiologia-mopece.html#sec-15", "k": "Frecuencia"}, {"g": "Guía 1 · Epidemiología", "t": "Comparar y medir la fuerza", "u": "guia-01-epidemiologia-mopece.html#lamina-6", "k": "Asociación e impacto"}, {"g": "Guía 1 · Epidemiología", "t": "La tabla 2×2 cambia de sentido según el diseño", "u": "guia-01-epidemiologia-mopece.html#sec-16", "k": "Asociación e impacto"}, {"g": "Guía 1 · Epidemiología", "t": "Chi cuadrado: ¿hay diferencia?", "u": "guia-01-epidemiologia-mopece.html#sec-17", "k": "Asociación e impacto"}, {"g": "Guía 1 · Epidemiología", "t": "Riesgo relativo y razón de posibilidades", "u": "guia-01-epidemiologia-mopece.html#sec-18", "k": "Asociación e impacto"}, {"g": "Guía 1 · Epidemiología", "t": "Impacto potencial: la lección central", "u": "guia-01-epidemiologia-mopece.html#sec-19", "k": "Asociación e impacto"}, {"g": "Guía 1 · Epidemiología", "t": "Estandarización de tasas", "u": "guia-01-epidemiologia-mopece.html#sec-20", "k": "Asociación e impacto"}, {"g": "Guía 1 · Epidemiología", "t": "Cómo se monta un sistema", "u": "guia-01-epidemiologia-mopece.html#lamina-7", "k": "Vigilancia"}, {"g": "Guía 1 · Epidemiología", "t": "Las tres polémicas de terminología", "u": "guia-01-epidemiologia-mopece.html#sec-21", "k": "Vigilancia"}, {"g": "Guía 1 · Epidemiología", "t": "Las cuatro etapas", "u": "guia-01-epidemiologia-mopece.html#sec-22", "k": "Vigilancia"}, {"g": "Guía 1 · Epidemiología", "t": "Definición de caso", "u": "guia-01-epidemiologia-mopece.html#sec-23", "k": "Vigilancia"}, {"g": "Guía 1 · Epidemiología", "t": "Fuentes de datos y tipos de vigilancia", "u": "guia-01-epidemiologia-mopece.html#sec-24", "k": "Vigilancia"}, {"g": "Guía 1 · Epidemiología", "t": "Notificación y subregistro", "u": "guia-01-epidemiologia-mopece.html#sec-25", "k": "Vigilancia"}, {"g": "Guía 1 · Epidemiología", "t": "Eventos bajo vigilancia y el RSI-2005", "u": "guia-01-epidemiologia-mopece.html#sec-26", "k": "Vigilancia"}, {"g": "Guía 1 · Epidemiología", "t": "Detectar la epidemia y evaluar el sistema", "u": "guia-01-epidemiologia-mopece.html#lamina-8", "k": "Curva y corredor"}, {"g": "Guía 1 · Epidemiología", "t": "El corredor endémico y sus cuatro zonas", "u": "guia-01-epidemiologia-mopece.html#sec-27", "k": "Curva y corredor"}, {"g": "Guía 1 · Epidemiología", "t": "Las tres tendencias temporales", "u": "guia-01-epidemiologia-mopece.html#sec-28", "k": "Curva y corredor"}, {"g": "Guía 1 · Epidemiología", "t": "Los siete atributos de calidad", "u": "guia-01-epidemiologia-mopece.html#sec-29", "k": "Curva y corredor"}, {"g": "Guía 1 · Epidemiología", "t": "Glosario de los tres módulos", "u": "guia-01-epidemiologia-mopece.html#sec-30", "k": "Curva y corredor"}]</script>
+<script>
+(function(){
+  var d=document, root=d.documentElement;
+  var guardado=null; try{ guardado=localStorage.getItem(root.dataset.sitio+'-tema'); }catch(e){}
+  aplicar(guardado==='dark'?'dark':'light');
+  function aplicar(t){
+    root.setAttribute('data-theme',t);
+    d.getElementById('tema-icono').textContent=t==='dark'?'☀':'☾';
+    d.getElementById('tema-txt').textContent=t==='dark'?'Claro':'Oscuro';
+    var m=d.querySelector('meta[name=theme-color]');
+    if(m) m.setAttribute('content', t==='dark'?'#151f2b':'#ffffff');
+    try{ localStorage.setItem(root.dataset.sitio+'-tema',t); }catch(e){}
+  }
+  d.getElementById('tema').onclick=function(){
+    aplicar(root.getAttribute('data-theme')==='dark'?'light':'dark'); };
+
+  var IDX=JSON.parse(d.getElementById('indice').textContent);
+  var q=d.getElementById('q'), res=d.getElementById('res'), sel=-1, hits=[];
+  function norm(s){ return s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase(); }
+  function buscar(){
+    var t=norm(q.value.trim());
+    if(t.length<2){ res.classList.remove('abierto'); res.innerHTML=''; return; }
+    hits=IDX.filter(function(i){ return norm(i.t).indexOf(t)>-1 || norm(i.k).indexOf(t)>-1; }).slice(0,14);
+    if(!hits.length){ res.innerHTML='<li class="vacio">Sin resultados para «'+q.value+'»</li>';
+      res.classList.add('abierto'); return; }
+    res.innerHTML=hits.map(function(h,n){
+      var i=norm(h.t).indexOf(t), et=h.t;
+      if(i>-1) et=h.t.slice(0,i)+'<mark>'+h.t.slice(i,i+t.length)+'</mark>'+h.t.slice(i+t.length);
+      return '<li><a href="'+h.u+'" data-n="'+n+'"><span class="via">'+h.g+' · '+h.k+'</span>'+et+'</a></li>';
+    }).join(''); res.classList.add('abierto'); sel=-1;
+  }
+  q.addEventListener('input',buscar);
+  q.addEventListener('keydown',function(e){
+    var as=res.querySelectorAll('a');
+    if(e.key==='Escape'){ q.value=''; res.classList.remove('abierto'); q.blur(); }
+    else if(e.key==='ArrowDown'&&as.length){ e.preventDefault(); sel=Math.min(sel+1,as.length-1); pinta(as); }
+    else if(e.key==='ArrowUp'&&as.length){ e.preventDefault(); sel=Math.max(sel-1,0); pinta(as); }
+    else if(e.key==='Enter'&&hits.length){ e.preventDefault(); location.href=hits[sel<0?0:sel].u; }
+  });
+  function pinta(as){ Array.prototype.forEach.call(as,function(a,n){ a.classList.toggle('sel',n===sel);
+    if(n===sel) a.scrollIntoView({block:'nearest'}); }); }
+  d.addEventListener('click',function(e){ if(!e.target.closest('.buscador')) res.classList.remove('abierto'); });
+  d.addEventListener('keydown',function(e){
+    if(e.key==='/'&&d.activeElement!==q){ e.preventDefault(); q.focus(); }
+    if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){ e.preventDefault(); q.focus(); }
+  });
+})();
+</script>
+</body>
+</html>
